@@ -5,4 +5,53 @@
   width: 100%;
   height: 40vh;
 }
+
+.restaurant-details .rest-infos {
+  padding: 35px;
+  background-color: #30435070;
+  border-radius: 20px;
+  margin-top: -120px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.restaurant-details .rest-infos .res-name {
+  text-align: center;
+  color: #fff;
+}
+
+.restaurant-details .rest-infos .res-address {
+  text-align: center;
+  color: #FF7062;
+  margin-bottom: 30px;
+}
+
+.restaurant-details .rest-infos .rest-btns .btn {
+  background-color: #FFD9D5;
+  outline: none;
+  border-radius: 14px;
+  margin: 0 4px;
+  color: #FF7062;
+}
+
+.restaurant-details .rest-infos .rest-btns .rate i {
+  color: #f1cf0e;
+}
+
+.restaurant-details .table-serve {
+  background-color: #03A63D;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.restaurant-details .table-serve .title {
+  color: #fff;
+}
+
+.restaurant-details .table-serve .prise {
+  color: #fff;
+  background-color: #05294120;
+  border-radius: 10px;
+  padding: 10px;
+}
 /*# sourceMappingURL=mo-style.css.map */

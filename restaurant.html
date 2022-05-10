@@ -38,21 +38,115 @@
     <section class="restaurant-details">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 mx-auto">
+
+                <div class="col-md-5 mx-auto d-flex align-items-center justify-content-center">
                     <div class="rest-infos">
                         <h3 class="res-name">مطعم السرايا التركي</h3>
                         <p class="res-address">الرياض- حي السليمانية -ش الشيخ ابن باز</p>
                         <div class="rest-btns">
-                            <button class="btn call"> <i class="fas fa-phone-alt"></i> اتصال </button>
-                            <button class="btn time"> <i class="far fa-clock"></i> اتصال </button>
-                            <button class="btn rate"> <i class="fas fa-star"></i> اتصال </button>
+                            <button class="btn rate"> 4.4 <i class="fas fa-star"></i>  </button>
+                            <button class="btn time"> 25 دقيقة <i class="far fa-clock"></i>  </button>
+                            <button class="btn call"> اتصال <i class="fas fa-phone-alt"></i>  </button>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-12 mb-4 table-serve d-flex align-items-center justify-content-between mt-5">
+                    <h3 class="title"> حجز طاولة </h3>
+                    <span class="prise"> مجاني </span>
+                </div>
             </div>
+
+            <div class="resturants">
+
+                <h5 class="title mb-4"> أشهر الأكلات </h5>
+
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            
+                            <div class="text-content">
+                                <h5 class="title"> سلطة خضار </h5>
+                                <p class="prise">2.50$</p>
+                                <button class="add-meal btn"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="item">
+                             
+                            <div class="text-content">
+                                <h5 class="title"> سلطة خضار </h5>
+                                <p class="prise">2.50$</p>
+                                <button class="add-meal btn"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            
+                            <div class="text-content">
+                                <h5 class="title"> سلطة خضار </h5>
+                                <p class="prise">2.50$</p>
+                                <button class="add-meal btn"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            
+                            <div class="text-content">
+                                <h5 class="title"> سلطة خضار </h5>
+                                <p class="prise">2.50$</p>
+                                <button class="add-meal btn"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="item">
+                             
+                            <div class="text-content">
+                                <h5 class="title"> سلطة خضار </h5>
+                                <p class="prise">2.50$</p>
+                                <button class="add-meal btn"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+            </div>
+             
         </div>
     </section>
 
+
+    <section class="rest-about pt-5">
+        <div class="container">
+            <h3 class="title mb-4"> معلومات عن المطعم </h3>
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="content">
+                        <p>
+                            مطعم متخصص بالاكلات الصحية الغنية
+                             بالمكونات الخالية من أي مواد مضرة بالصحة 
+                            .. كما نهتم بالاكل المفضل للرياضيين 
+                        </p>
+                         <div class="video">
+                        <img src="imgs/Video.png" alt="">
+                    </div>
+                    </div>
+                   
+                </div>
+
+                <div class="col-md-6">
+                    <div class="content">
+                        <p>
+                            مطعم متخصص بالاكلات الصحية الغنية
+                             بالمكونات الخالية من أي مواد مضرة بالصحة 
+                            .. كما نهتم بالاكل المفضل للرياضيين 
+                        </p>
+                         <div class="video">
+                        <img src="imgs/Video.png" alt="">
+                    </div>
+                    </div>
+                   
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -66,24 +160,25 @@
         // $('#Footer').load("Footer.html");
     </script>
 
-    <script>
-        $(".owl-carousel").owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                600: {
-                    items: 3,
-                },
-                1000: {
-                    items: 3,
-                },
+<script>
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        rtl:true, 
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 2,
             },
-        });
-    </script>
+            600: {
+                items: 4,
+            },
+            1000: {
+                items: 6,
+            },
+        },
+    });
+</script>
 
 </body>
 

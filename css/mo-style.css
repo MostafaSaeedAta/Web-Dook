@@ -1,8 +1,142 @@
+p {
+  margin-bottom: 0;
+}
+
+body {
+  height: 2000px;
+}
+
 .breadcrumb {
   background-image: url(../imgs/bread-crumb.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 40vh;
+}
+
+.restaurant-details .rest-infos {
+  padding: 35px;
+  background-color: #30435070;
+  border-radius: 20px;
+  margin-top: -120px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.restaurant-details .rest-infos .res-name {
+  text-align: center;
+  color: #fff;
+}
+
+.restaurant-details .rest-infos .res-address {
+  text-align: center;
+  color: #FF7062;
+  margin-bottom: 30px;
+}
+
+.restaurant-details .rest-infos .rest-btns .btn {
+  background-color: #FFD9D5;
+  outline: none;
+  border-radius: 14px;
+  margin: 0 4px;
+  color: #FF7062;
+}
+
+.restaurant-details .rest-infos .rest-btns .rate i {
+  color: #f1cf0e;
+}
+
+.restaurant-details .table-serve {
+  background-color: #03A63D;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.restaurant-details .table-serve .title {
+  color: #fff;
+}
+
+.restaurant-details .table-serve .prise {
+  color: #fff;
+  background-color: #05294120;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.restaurant-details .resturants .title {
+  color: #304350;
+}
+
+.restaurant-details .resturants .item {
+  background-image: url(../imgs/photo-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 185px;
+  border-radius: 43px;
+  position: relative;
+  overflow: visible;
+}
+
+.restaurant-details .resturants .item .text-content {
+  position: relative;
+  border-radius: 0px 0px 43px 43px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 15px 20px 14px 10px;
+}
+
+.restaurant-details .resturants .item .text-content::after {
+  position: absolute;
+  content: '';
+  top: 20px;
+  left: -26px;
+  border-radius: 18px 50px 22px 22px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  background-color: #fff;
+  width: 78px;
+  height: 66px;
+  z-index: -1;
+}
+
+.restaurant-details .resturants .item .text-content .title {
+  font-size: 13px;
+  color: #ffffff;
+  text-align: start;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.restaurant-details .resturants .item .text-content .prise {
+  text-align: start;
+  font-weight: bold;
+  color: #fff;
+}
+
+.restaurant-details .resturants .item .text-content .add-meal {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background-color: #FF7062;
+  border-radius: 10px;
+  padding: 4px 10px;
+  color: #fff;
+}
+
+.rest-about .content {
+  background-color: #F9F9F9;
+  border-radius: 50px;
+  padding: 40px;
+  margin: 20px;
+}
+
+.rest-about .content p {
+  margin-bottom: 10px;
+  color: #304350;
+}
+
+.rest-about .content .video img {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=mo-style.css.map */

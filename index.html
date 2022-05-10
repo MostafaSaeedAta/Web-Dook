@@ -10,7 +10,7 @@
     <!-- icon -->
     <link rel="icon" type="image/x-icon" href="img/fav.png">
     <!-- Bootstrap -->
-    <link rel="stylesheet" id="BootstrapLink" href="css/bootstrap.rtl.css"> 
+    <link rel="stylesheet" id="BootstrapLink" href="css/bootstrap.rtl.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/all.css">
     <!-- swipper -->
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/owl.min.css">
     <link rel="stylesheet" href="css/owl-def.min.css">
     <!-- animate -->
-    <link rel="stylesheet" href="css/animate.min.css"> 
+    <link rel="stylesheet" href="css/animate.min.css">
     <!-- custom style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -35,14 +35,14 @@
     <!-- search area  -->
     <div class="home-search my-4">
         <div class="container">
-            <div class="row d-flex">
+            <div class="row d-flex flex-row-reverse">
                 <div class="agent col-4">
-                    <div class="dropdown">
+                    <div class="dropdown d-flex justify-content-end">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             حدد المنطقة
                         </button>
-                        <ul class="dropdown-menu text-end" aria-labelledby="dropdownMenuButton1">
+                        <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
                             <li>
                                 <a class="dropdown-item" href="#">الرياض</a>
                             </li>
@@ -56,9 +56,8 @@
                     </div>
                 </div>
                 <div class="search col-8">
-                    <form class="d-flex">
-                        <input class="form-control me-2 text-end" type="search" placeholder="إبحث من هنا"
-                            aria-label="Search" />
+                    <form class="d-flex flex-row-reverse">
+                        <input class="form-control me-2" type="search" placeholder="إبحث من هنا" aria-label="Search" />
                         <button class="btn btn-outline-success" type="submit">
                             <i class="fas fa-search"></i>
                         </button>
@@ -69,10 +68,10 @@
     </div>
 
     <!-- resturants area  -->
-    <div class="container resturants">
-        <div class="row">
+    <div class="resturants">
+        <div class="container ">
             <div class="owl-carousel owl-theme">
-                <div class="item mx-5">
+                <div class="item ">
                     <div class="info">
                         <div class="distance"><span>مجاني</span></div>
                         <div class="offer"><span>13KM</span></div>
@@ -82,7 +81,7 @@
                         <p class="desc">مطعم صحة وعافية</p>
                     </div>
                 </div>
-                <div class="item mx-5">
+                <div class="item ">
                     <div class="info">
                         <div class="distance"><span>20%</span></div>
                         <div class="offer"><span>13KM</span></div>
@@ -92,7 +91,7 @@
                         <p class="desc">سلطات</p>
                     </div>
                 </div>
-                <div class="item mx-5">
+                <div class="item ">
                     <div class="info">
                         <div class="distance"><span>free</span></div>
                         <div class="offer"><span>13KM</span></div>
@@ -102,7 +101,7 @@
                         <p class="desc">لحوم</p>
                     </div>
                 </div>
-                <div class="item mx-5">
+                <div class="item ">
                     <div class="info">
                         <div class="distance"><span>50%</span></div>
                         <div class="offer"><span>13KM</span></div>
@@ -112,7 +111,7 @@
                         <p class="desc">دجاج</p>
                     </div>
                 </div>
-                <div class="item mx-5">
+                <div class="item ">
                     <div class="info">
                         <div class="distance"><span>مجاني</span></div>
                         <div class="offer"><span>13KM</span></div>
@@ -122,36 +121,291 @@
                         <p class="desc">اضافات</p>
                     </div>
                 </div>
-                
+            </div>
+        </div>
+    </div>
+
+    <!-- cats area  -->
+    <div class="categories mt-4">
+        <div class="container">
+            <div class="main-title d-flex justify-content-between">
+                <h3 class="title">
+                    التصنيفات
+                </h3>
+                <a href="#">الكل</a>
+            </div>
+            <div class="cats-links">
+                <div class="cat-link bg-yellow"><a href="#" class="text-yellow">حلويات</a></div>
+                <div class="cat-link bg-red"><a href="#" class="text-red">مشويات</a></div>
+                <div class="cat-link bg-green"><a href="#" class="text-green">أكل صحي</a></div>
+                <div class="cat-link bg-gray"><a href="#" class="text-gray">شرقي</a></div>
+                <div class="cat-link bg-blue"><a href="#" class="text-gray">غربي</a></div>
+                <div class="cat-link bg-semi-green"><a href="#" class="text-gray">ايطالي</a></div>
+                <div class="cat-link bg-yellow"><a href="#" class="text-gray">مكسيكي</a></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- most famous resturants -->
+    <div class="most-visited mt-4">
+        <div class="container">
+            <div class="main-title my-4 ">
+                <h3 class="title">أشهر المطاعم</h3>
+            </div>
+            <div class="owl-carousel owl-theme most-visted-owl">
+                <div class="item bg-white">
+                    <div class="img-content">
+                        <img src="imgs/photo-1.png" alt="">
+                        <div class="rate d-flex">
+                            <span>5.0</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="fav"><i class="fas fa-heart"></i></div>
+                    </div>
+                    <div class="card-details">
+                        <div class="resturant-details">
+                            <div class="resturant-cat">
+                                <h5>مطاعم اللحوم</h5>
+                            </div>
+                            <div class="resturant-name">
+                                <h2 class="title">مطعم الدمشقي</h2>
+                            </div>
+                        </div>
+                        <div class="rent-detail bg-semi-green">
+                            <p class="text-green mb-0">تم الحجز بعد 13 ساعة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item bg-white">
+                    <div class="img-content">
+                        <img src="imgs/photo-2.png" alt="">
+                        <div class="rate d-flex">
+                            <span>5.0</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="fav"><i class="fas fa-heart"></i></div>
+                    </div>
+                    <div class="card-details">
+                        <div class="resturant-details">
+                            <div class="resturant-cat">
+                                <h5>مطاعم الاسماك</h5>
+                            </div>
+                            <div class="resturant-name">
+                                <h2 class="title">مطعم الحلقة</h2>
+                            </div>
+                        </div>
+                        <div class="rent-detail bg-semi-green">
+                            <p class="text-green mb-0">تم الحجز بعد 13 ساعة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item bg-white">
+                    <div class="img-content">
+                        <img src="imgs/photo-3.png" alt="">
+                        <div class="rate d-flex">
+                            <span>5.0</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="fav"><i class="fas fa-heart"></i></div>
+                    </div>
+                    <div class="card-details">
+                        <div class="resturant-details">
+                            <div class="resturant-cat">
+                                <h5>مطاعم النباتات</h5>
+                            </div>
+                            <div class="resturant-name">
+                                <h2 class="title">مطعم الزهرة</h2>
+                            </div>
+                        </div>
+                        <div class="rent-detail bg-semi-green">
+                            <p class="text-green mb-0">تم الحجز بعد 13 ساعة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item bg-white">
+                    <div class="img-content">
+                        <img src="imgs/photo-1.png" alt="">
+                        <div class="rate d-flex">
+                            <span>5.0</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="fav"><i class="fas fa-heart"></i></div>
+                    </div>
+                    <div class="card-details">
+                        <div class="resturant-details">
+                            <div class="resturant-cat">
+                                <h5>مطاعم اللحوم</h5>
+                            </div>
+                            <div class="resturant-name">
+                                <h2 class="title">مطعم بيت الشام</h2>
+                            </div>
+                        </div>
+                        <div class="rent-detail bg-semi-green">
+                            <p class="text-green mb-0">تم الحجز بعد 13 ساعة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item bg-white">
+                    <div class="img-content">
+                        <img src="imgs/photo-1.png" alt="">
+                        <div class="rate d-flex">
+                            <span>5.0</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="fav"><i class="fas fa-heart"></i></div>
+                    </div>
+                    <div class="card-details">
+                        <div class="resturant-details">
+                            <div class="resturant-cat">
+                                <h5>مطاعم اللحوم</h5>
+                            </div>
+                            <div class="resturant-name">
+                                <h2 class="title">مطعم الطيبات</h2>
+                            </div>
+                        </div>
+                        <div class="rent-detail bg-semi-green">
+                            <p class="text-green mb-0">تم الحجز بعد 13 ساعة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item bg-white">
+                    <div class="img-content">
+                        <img src="imgs/photo-2.png" alt="">
+                        <div class="rate d-flex">
+                            <span>5.0</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="fav"><i class="fas fa-heart"></i></div>
+                    </div>
+                    <div class="card-details">
+                        <div class="resturant-details">
+                            <div class="resturant-cat">
+                                <h5>مطاعم اللحوم</h5>
+                            </div>
+                            <div class="resturant-name">
+                                <h2 class="title">مطعم السوري</h2>
+                            </div>
+                        </div>
+                        <div class="rent-detail bg-semi-green">
+                            <p class="text-green mb-0">تم الحجز بعد 13 ساعة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item bg-white">
+                    <div class="img-content">
+                        <img src="imgs/photo-3.png" alt="">
+                        <div class="rate d-flex">
+                            <span>5.0</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="fav"><i class="fas fa-heart"></i></div>
+                    </div>
+                    <div class="card-details">
+                        <div class="resturant-details">
+                            <div class="resturant-cat">
+                                <h5>مطاعم اللحوم</h5>
+                            </div>
+                            <div class="resturant-name">
+                                <h2 class="title">مطعم الشيخ</h2>
+                            </div>
+                        </div>
+                        <div class="rent-detail bg-semi-green">
+                            <p class="text-green mb-0">تم الحجز بعد 13 ساعة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item bg-white">
+                    <div class="img-content">
+                        <img src="imgs/photo-2.png" alt="">
+                        <div class="rate d-flex">
+                            <span>5.0</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="fav"><i class="fas fa-heart"></i></div>
+                    </div>
+                    <div class="card-details">
+                        <div class="resturant-details">
+                            <div class="resturant-cat">
+                                <h5>مطاعم اللحوم</h5>
+                            </div>
+                            <div class="resturant-name">
+                                <h2 class="title">مطعم الدمشقي</h2>
+                            </div>
+                        </div>
+                        <div class="rent-detail bg-semi-green">
+                            <p class="text-green mb-0">تم الحجز بعد 13 ساعة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item bg-white">
+                    <div class="img-content">
+                        <img src="imgs/photo-1.png" alt="">
+                        <div class="rate d-flex">
+                            <span>5.0</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="fav"><i class="fas fa-heart"></i></div>
+                    </div>
+                    <div class="card-details">
+                        <div class="resturant-details">
+                            <div class="resturant-cat">
+                                <h5> مشروبات</h5>
+                            </div>
+                            <div class="resturant-name">
+                                <h2 class="title">مطعم شاليموه</h2>
+                            </div>
+                        </div>
+                        <div class="rent-detail bg-semi-green">
+                            <p class="text-green mb-0">تم الحجز بعد 13 ساعة</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/popper.min.js"></script> 
-    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/owl.min.js"></script>  
+    <script src="js/owl.min.js"></script>
     <script>
         $('#Header').load("Header.html");
         // $('#Footer').load("Footer.html");
-    </script> 
+    </script>
     <script src="js/main.js"></script>
-    
-    
+
     <script>
-        $(".owl-carousel").owlCarousel({
+        $(".owl-carousel.most-visted-owl").owlCarousel({
             loop: true,
-            rtl:true, 
+            rtl: true,
             margin: 10,
             nav: true,
+            0: {
+                items: 1,
+            },
             responsive: {
-                0: {
-                    items: 1,
-                },
                 600: {
                     items: 3,
+                },
+                1000: {
+                    items: 5,
+                },
+            },
+        });
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            rtl: true,
+            margin: 10,
+            nav: true,
+            0: {
+                items: 1,
+            },
+            responsive: {
+                600: {
+                    items: 2,
                 },
                 1000: {
                     items: 3,
@@ -159,6 +413,7 @@
             },
         });
     </script>
+
 
 </body>
 

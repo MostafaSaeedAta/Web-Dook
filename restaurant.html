@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Web-Dook </title>
+    <!-- icon -->
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" id="BootstrapLink" href="css/bootstrap.css"> 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- swipper -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <!-- owl -->
+    <link rel="stylesheet" href="css/owl.min.css">
+    <link rel="stylesheet" href="css/owl-def.min.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="css/animate.min.css"> 
+    <!-- custom style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- the header area  -->
+    <header id="Header">
+
+    </header>
+
+    <!-- home page content  -->
+
+   
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/swiper.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/owl.min.js"></script>  
+     <script src="js/main.js"></script>
+     <script>
+        $('#Header').load("Header.html");
+        // $('#Footer').load("Footer.html");
+    </script> 
+    
+    <script>
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 3,
+                },
+                1000: {
+                    items: 3,
+                },
+            },
+        });
+    </script>
+
+</body>
+
+</html>

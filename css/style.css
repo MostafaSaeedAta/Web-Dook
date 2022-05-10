@@ -177,6 +177,26 @@
 .resturants .item {
     background-image: url("../imgs/photo-1.png");
     width: 275px;
-    height: 245px;
-    border-radius: 50px;
+    height: 275px;
+    border-radius: 20%;
+}
+.resturants .item .info .distance,
+.resturants .item .info .offer{
+    position: absolute;
+    display: inline-block;
+    top: 20px;
+    background-color: var(--main-color);
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    opacity: .9;
+}
+.resturants .item .info .distance{
+    left: 40px;
+}
+.resturants .item .info .offer{
+    right: 40px;
 }

@@ -2,6 +2,10 @@ p {
   margin-bottom: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   height: 2000px;
 }
@@ -75,6 +79,13 @@ body {
   border-radius: 43px;
   position: relative;
   overflow: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 .restaurant-details .resturants .item .text-content {
@@ -126,7 +137,7 @@ body {
 .rest-about .content {
   background-color: #F9F9F9;
   border-radius: 50px;
-  padding: 40px;
+  padding: 56px;
   margin: 20px;
 }
 
@@ -135,8 +146,227 @@ body {
   color: #304350;
 }
 
+.rest-about .content .video {
+  position: relative;
+}
+
 .rest-about .content .video img {
   width: 100%;
   height: 100%;
+}
+
+.rest-about .content .video .play-btn {
+  position: absolute;
+  font-size: 25px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #F29F05;
+  color: #fff;
+  border-radius: 20px;
+  padding: 18px 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.rest-about .content .video .play-btn:hover {
+  opacity: 0.7;
+}
+
+.rest-about .gps {
+  background-color: #F9F9F9;
+  border-radius: 50px;
+  padding: 56px;
+  margin: 20px;
+  min-height: 420px;
+}
+
+.rest-about .gps .rest-name,
+.rest-about .gps .rest-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #091B3D;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rest-about .gps .rest-address {
+  margin-top: 50px;
+}
+
+.rest-about .gps .rest-address .title {
+  margin-bottom: 20px;
+}
+
+.rest-about .gps .rest-address .location-div {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rest-about .gps .rest-address .location-div .img-div {
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../imgs/map.png);
+  background-size: cover;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.rest-about .gps .rest-address .location-div .img-div img {
+  width: auto;
+  height: 70px;
+}
+
+.rest-about .gps .rest-address .location-div .location-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rest-about .gps .rest-address .location-div .location-details p {
+  color: #878787;
+}
+
+.rest-about .gps .rest-address .location-div .location-details a {
+  color: #03A63D;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: end;
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+.rest-about .gps .rest-address .location-div .location-details a:hover {
+  color: #FF7062;
+}
+
+.rating-section .rating-div {
+  background-color: #F9F9F9;
+  padding: 15px 40px;
+  border-radius: 20px;
+  margin-top: 25px;
+  /* Place text to the right */
+  /* Individual bars */
+}
+
+.rating-section .rating-div .right-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rating-section .rating-div .right-div .rate-star {
+  color: #FF7062;
+  font-weight: bold;
+}
+
+.rating-section .rating-div .right-div .rate-star i {
+  color: #f1cf0e;
+}
+
+.rating-section .rating-div .right-div p {
+  color: #091B3D;
+}
+
+.rating-section .rating-div .side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.rating-section .rating-div .middle {
+  margin-top: 10px;
+  float: left;
+  width: 80%;
+}
+
+.rating-section .rating-div .right {
+  text-align: right;
+}
+
+.rating-section .rating-div .bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+}
+
+.rating-section .rating-div .bar-5 {
+  width: 60%;
+  height: 18px;
+  background-color: #4B9F47;
+  border-radius: 12px;
+}
+
+.rating-section .rating-div .bar-4 {
+  width: 30%;
+  height: 18px;
+  background-color: #4b9f47bf;
+  border-radius: 12px;
+}
+
+.rating-section .rating-div .bar-3 {
+  width: 20%;
+  height: 18px;
+  background-color: #4b9f4799;
+  border-radius: 12px;
+}
+
+.rating-section .rating-div .bar-2 {
+  width: 10%;
+  height: 18px;
+  background-color: #F5B544;
+  border-radius: 12px;
+}
+
+.rating-section .rating-div .bar-1 {
+  width: 15%;
+  height: 18px;
+  background-color: #E6521F;
+  border-radius: 12px;
 }
 /*# sourceMappingURL=mo-style.css.map */

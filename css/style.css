@@ -246,9 +246,10 @@
 }
 
 /* resturants style  */
-.resturants .item {
-    background-image: url("../imgs/photo-1.png");
-    max-width: 300px;
+.resturants .item .img-container {
+    background-image: url(../imgs/photo-2.png);
+    max-width: 315px;
+    background-size: cover;
     height: 275px;
     border-radius: 20%;
     position: relative;
@@ -285,8 +286,8 @@
 
 .resturants .item .text-content {
     text-align: center;
-    background-color: #3043506e;
-    border-radius: 60px;
+    background-color: #475e6eba;
+    border-radius: 65px;
 }
 
 .resturants .item .text-content .title {
@@ -372,6 +373,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .categories .cats-links .cat-link {
@@ -381,6 +383,7 @@
     border-radius: 8px;
     line-height: 45px;
     font-weight: 500;
+    margin-bottom: 15px;
 }
 
 .categories .cats-links .cat-link a {
@@ -399,12 +402,12 @@
 }
 
 .most-visted-owl .img-content img {
-    width: 210px;
+    max-width: 210px;
 }
 
 .most-visted-owl .img-content .rate {
     position: absolute;
-    right: 20px;
+    right: 15px;
     top: 20px;
     background-color: #090909;
     width: 60px;
@@ -428,7 +431,7 @@
 
 .most-visted-owl .img-content .fav {
     position: absolute;
-    left: 20px;
+    left: 15px;
     top: 20px;
     width: 40px;
     background-color: #090909;
@@ -439,10 +442,6 @@
     line-height: 30px;
     color: red;
     cursor: pointer;
-}
-
-.most-visted-owl .card-details {
-    margin-top: 20px;
 }
 
 .most-visted-owl .card-details .resturant-details {
@@ -458,7 +457,7 @@
 
 .most-visted-owl .card-details .resturant-details .resturant-name h2 {
     margin: 5px 0;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     display: inline-block;
 }
 

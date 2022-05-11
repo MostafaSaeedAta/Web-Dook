@@ -18,6 +18,8 @@
     <!-- owl -->
     <link rel="stylesheet" href="css/owl.min.css">
     <link rel="stylesheet" href="css/owl-def.min.css">
+    <!-- fancy -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <!-- animate -->
     <link rel="stylesheet" href="css/animate.min.css">
     <!-- custom style -->
@@ -125,7 +127,7 @@
                         </p>
                         <div class="video">
                             <img src="imgs/Video.png" alt="">
-                            <a href="" class="play-btn btn"><i class="far fa-play"></i></a>
+                            <a data-fancybox="products" href="imgs/file_example_MP4_480_1_5MG.mp4" class="play-btn btn"><i class="far fa-play"></i></a>
                         </div>
                     </div>
 
@@ -160,7 +162,7 @@
                                         ش الشيخ ابن باز
                                     </p>
 
-                                    <a href="">احصل على الاتجاهات</a>
+                                    <a href="https://www.google.com/maps/@29.9424209,32.7071275,9z" target="_blank">احصل على الاتجاهات</a>
 
                                 </div>
 
@@ -175,78 +177,99 @@
     </section>
 
 
-    <section class="rating-section">
+    <section class="rating-section mb-5">
         <div class="container">
             <h3 class="title">التقييم</h3>
             <div class="rating-div">
                 <div class="row">
 
                     <div class="col-md-5">
-                        <div class="right-div">
+                        <div class="right-div pe-5">
                             <span class="rate-star">4.4 <i class="fas fa-star"></i></span>
                             <p class=""> تقييم <span class="fw-bold">(200)</span> </p>
-                        
-                           
-                        
+
+
+
                         </div>
 
                         <div class="row mt-4 pe-5">
                             <div class="side">
-                              <div>5 </div>
+                                <div>5 </div>
                             </div>
                             <div class="middle">
-                              <div class="bar-container">
-                                <div class="bar-5"></div>
-                              </div>
+                                <div class="bar-container">
+                                    <div class="bar-5"></div>
+                                </div>
                             </div>
-                           
+
                             <div class="side">
-                              <div>4 </div>
+                                <div>4 </div>
                             </div>
                             <div class="middle">
-                              <div class="bar-container">
-                                <div class="bar-4"></div>
-                              </div>
+                                <div class="bar-container">
+                                    <div class="bar-4"></div>
+                                </div>
                             </div>
-                           
+
                             <div class="side">
-                              <div>3 </div>
+                                <div>3 </div>
                             </div>
                             <div class="middle">
-                              <div class="bar-container">
-                                <div class="bar-3"></div>
-                              </div>
+                                <div class="bar-container">
+                                    <div class="bar-3"></div>
+                                </div>
                             </div>
-                           
+
                             <div class="side">
-                              <div>2 </div>
+                                <div>2 </div>
                             </div>
                             <div class="middle">
-                              <div class="bar-container" style="background-color: #f5b4442c;">
-                                <div class="bar-2"></div>
-                              </div>
+                                <div class="bar-container" style="background-color: #f5b4442c;">
+                                    <div class="bar-2"></div>
+                                </div>
                             </div>
-                           
+
                             <div class="side">
-                              <div>1 </div>
+                                <div>1 </div>
                             </div>
                             <div class="middle">
-                              <div class="bar-container" style="background-color: #f5b4443b">
-                                <div class="bar-1"></div>
-                              </div>
+                                <div class="bar-container" style="background-color: #f5b4443b">
+                                    <div class="bar-1"></div>
+                                </div>
                             </div>
-                           
-                          </div>
+
+                        </div>
                     </div>
 
-                    <div class="col-md-7">
-                         
+                    <div class="col-md-7 d-flex flex-column justify-content-center align-items-end">
+                        <div class="add-comment-rate">
+
+                            <div class="add-rate mb-3">
+
+                                <p class="fw-bold"> أضف تقييمك </p>
+                                
+                                <div class="star-rating">
+                                    <span class="far fa-star" data-rating="1"></span>
+                                    <span class="far fa-star" data-rating="2"></span>
+                                    <span class="far fa-star" data-rating="3"></span>
+                                    <span class="far fa-star" data-rating="4"></span>
+                                    <span class="far fa-star" data-rating="5"></span>
+                                    <input type="hidden" name="whatever1" class="rating-value" value="0">
+                                </div>
+
+                            </div>
+
+                            <div class="add-comment">
+                                <button class="btn"> أضف تعليقاً </button>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
 
 
-                
+
             </div>
         </div>
     </section>
@@ -257,6 +280,7 @@
     <script src="js/swiper.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/fontawesome-pro.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/owl.min.js"></script>
     <script src="js/main.js"></script>
     <script>
@@ -281,6 +305,32 @@
                     items: 6,
                 },
             },
+        });
+    </script>
+
+
+    <script>
+        var $star_rating = $('.star-rating .far');
+
+        var SetRatingStar = function () {
+            return $star_rating.each(function () {
+                if (parseInt($star_rating.siblings('input.rating-value').val()) >= parseInt($(this).data(
+                        'rating'))) {
+                    return $(this).addClass('gold');
+                } else {
+                    return $(this).removeClass('gold');
+                }
+            });
+        };
+
+        $star_rating.on('click', function () {
+            $star_rating.siblings('input.rating-value').val($(this).data('rating'));
+            return SetRatingStar();
+        });
+
+        SetRatingStar();
+        $(document).ready(function () {
+
         });
     </script>
 

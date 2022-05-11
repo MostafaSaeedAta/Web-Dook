@@ -1,94 +1,181 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-whight">
     <div class="container flex-row-reverse">
-        <a class="navbar-brand" href="#"
-            ><img src="imgs/logo.png" alt=""
-        /></a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
+        <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-            class="collapse navbar-collapse"
-            id="navbarSupportedContent"
-        >
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a
-                        class="nav-link active d-flex"
-                        aria-current="page"
-                        href="#"
-                    >
+                    <a class="nav-link active d-flex" aria-current="page" href="#">
                         <p class="text my-0 mx-3">الرئيسية</p>
                         <i class="fas fa-home"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a
-                        class="nav-link d-flex"
-                        aria-current="page"
-                        href="#"
-                    >
+                    <a class="nav-link d-flex" aria-current="page" href="#">
                         <p class="text my-0 mx-3">البحث</p>
                         <i class="fas fa-search"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a
-                        class="nav-link d-flex"
-                        aria-current="page"
-                        href="#"
-                    >
+                    <a class="nav-link d-flex" aria-current="page" href="#">
                         <p class="text my-0 mx-3">الحجوزات</p>
                         <i class="far fa-newspaper"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a
-                        class="nav-link d-flex"
-                        aria-current="page"
-                        href="#"
-                    >
+                    <a class="nav-link d-flex" aria-current="page" href="#">
                         <p class="text my-0 mx-3">عربة التسوق</p>
                         <i class="fas fa-shopping-cart"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a
-                        class="nav-link d-flex"
-                        aria-current="page"
-                        href="#"
-                    >
+                    <a class="nav-link d-flex" aria-current="page" href="#">
                         <p class="text my-0 mx-3">الملف الشخصي</p>
                         <i class="fas fa-user"></i>
                     </a>
                 </li>
-                <li class="nav-item notafications ms-3">
-                    <a
-                        class="nav-link"
-                        aria-current="page"
-                        href="#"
-                    >
-                        <span>0</span>
-                        <i class="fas fa-concierge-bell"></i>
-                    </a>
+                <li class="notafications ms-3">
+
+                    <!-- Scrollable modal -->
+                    <!-- Button trigger modal -->
+                    <button type="button" style="border: none;
+                    border-radius: 10px;outline: none;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="nav-link" aria-current="page" href="#">
+                            <span>0</span>
+                            <i class="fas fa-concierge-bell"></i>
+                        </a>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center" id="exampleModalLabel">الإشعارات</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="notification-content d-flex">
+                                        <div class="notification-img">
+                                            <img src="imgs/photo-1.png" alt="">
+                                        </div>
+                                        <div class="notification-text">
+                                            <div class="text-header">
+                                                <h2 class="rest-name">مطعم حضرموت</h2>
+                                                <span class="notification-type">إشعار تأكيد</span>
+                                            </div>
+                                            <div class="text-content">
+                                                <p class="notification-description">تم تأكيد الحجز الخاص بك يوم 1-12
+                                                    لشهر يناير عام 2022</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-content d-flex">
+                                        <div class="notification-img">
+                                            <img src="imgs/logo.png" alt="">
+                                        </div>
+                                        <div class="notification-text">
+                                            <div class="text-header">
+                                                <h2 class="rest-name">مطعم حضرموت</h2>
+                                                <span class="notification-type">إشعار تنبيه</span>
+                                            </div>
+                                            <div class="text-content">
+                                                <p class="notification-description">نذكرك ان الحجز الخاص بك لمطعمنا بعد
+                                                    <span class="text-danger">48 ساعة </span> من الأن
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-content d-flex">
+                                        <div class="notification-img">
+                                            <img src="imgs/photo-2.png" alt="">
+                                        </div>
+                                        <div class="notification-text">
+                                            <div class="text-header">
+                                                <h2 class="rest-name">مطعم حضرموت</h2>
+                                                <span class="notification-type">إشعار تأكيد</span>
+                                            </div>
+                                            <div class="text-content">
+                                                <p class="notification-description">نذكرك بتحديث بياناتك الشخصية و تحديث
+                                                    موقعك الجيوغرافي للاستمتاع بأحدثالعروض المحيطة بك</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-content d-flex">
+                                        <div class="notification-img">
+                                            <img src="imgs/logo.png" alt="">
+                                        </div>
+                                        <div class="notification-text">
+                                            <div class="text-header">
+                                                <h2 class="rest-name">مطعم حضرموت</h2>
+                                                <span class="notification-type">إشعار تأكيد</span>
+                                            </div>
+                                            <div class="text-content">
+                                                <p class="notification-description">تم رفض طلبك لمطعمنا لعدم توافر
+                                                    مواعيد مسبقة
+                                                    برجاء الدخول الى صفحة المطعم و إعادة الحجز في وقت لاحق</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-content d-flex">
+                                        <div class="notification-img">
+                                            <img src="imgs/photo-1.png" alt="">
+                                        </div>
+                                        <div class="notification-text">
+                                            <div class="text-header">
+                                                <h2 class="rest-name">مطعم حضرموت</h2>
+                                                <span class="notification-type">إشعار تأكيد</span>
+                                            </div>
+                                            <div class="text-content">
+                                                <p class="notification-description">تم تأكيد الحجز الخاص بك يوم 1-12
+                                                    لشهر يناير عام 2022</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-content d-flex">
+                                        <div class="notification-img">
+                                            <img src="imgs/photo-1.png" alt="">
+                                        </div>
+                                        <div class="notification-text">
+                                            <div class="text-header">
+                                                <h2 class="rest-name">مطعم حضرموت</h2>
+                                                <span class="notification-type">إشعار تأكيد</span>
+                                            </div>
+                                            <div class="text-content">
+                                                <p class="notification-description">تم تأكيد الحجز الخاص بك يوم 1-12
+                                                    لشهر يناير عام 2022</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-content d-flex">
+                                        <div class="notification-img">
+                                            <img src="imgs/photo-2.png" alt="">
+                                        </div>
+                                        <div class="notification-text">
+                                            <div class="text-header">
+                                                <h2 class="rest-name">مطعم حضرموت</h2>
+                                                <span class="notification-type">إشعار تأكيد</span>
+                                            </div>
+                                            <div class="text-content">
+                                                <p class="notification-description">نذكرك بتحديث بياناتك الشخصية و تحديث
+                                                    موقعك الجيوغرافي للاستمتاع بأحدثالعروض المحيطة بك</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
         <div class="toggeler me-2">
             <span><i class="fas fa-bars"></i></span>
             <ul class="list-group">
-                <button
-                    type="button"
-                    class="btn-close"
-                    aria-label="Close"
-                ></button>
+                <button type="button" class="btn-close" aria-label="Close"></button>
                 <li class="list-group-item d-flex">
                     <i class="fas fa-long-arrow-alt-left"></i>
                     <p class="m-0">تعديل البيانات الشخصيه</p>
@@ -117,29 +204,30 @@
             <div class="overlay"></div>
         </div>
     </div>
-    </nav>
+</nav>
 
-    <script>
-        // toggle the sidebar active class
-let sidebarItems = document.querySelector(".list-group");
-let sidebarSpan = document.querySelector(".toggeler span");
+<script>
+    // toggle the sidebar active class
+    let sidebarItems = document.querySelector(".list-group");
+    let sidebarSpan = document.querySelector(".toggeler span");
 
-sidebarSpan.addEventListener("click", () => {
-    sidebarItems.classList.toggle("active");
-    document.querySelector(".toggeler .overlay").classList.toggle("active");
-});
-document.querySelector(".btn-close").addEventListener("click", () => {
-    sidebarItems.classList.remove("active");
-    document.querySelector(".toggeler .overlay").classList.remove("active");
-});
-
-// add active class to nav list icons
-let navItem = document.querySelectorAll(".nav-link");
-function activeLink() {
-    navItem.forEach((item) => {
-        item.classList.remove("active");
-        this.classList.add("active");
+    sidebarSpan.addEventListener("click", () => {
+        sidebarItems.classList.toggle("active");
+        document.querySelector(".toggeler .overlay").classList.toggle("active");
     });
-}
-navItem.forEach((item) => item.addEventListener("click", activeLink));
-    </script>
+    document.querySelector(".btn-close").addEventListener("click", () => {
+        sidebarItems.classList.remove("active");
+        document.querySelector(".toggeler .overlay").classList.remove("active");
+    });
+
+    // add active class to nav list icons
+    let navItem = document.querySelectorAll(".nav-link");
+
+    function activeLink() {
+        navItem.forEach((item) => {
+            item.classList.remove("active");
+            this.classList.add("active");
+        });
+    }
+    navItem.forEach((item) => item.addEventListener("click", activeLink));
+</script>

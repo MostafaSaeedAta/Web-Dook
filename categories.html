@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> All Categories </title>
+    <!-- icon -->
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" id="BootstrapLink" href="css/bootstrap.rtl.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- swipper -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <!-- owl -->
+    <link rel="stylesheet" href="css/owl.min.css">
+    <link rel="stylesheet" href="css/owl-def.min.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- custom style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- the header area  -->
+    <header id="Header" class="the-navbar">
+
+    </header>
+
+    <!-- cats page content  -->
+    <h3 class="title text-center my-4">التصنيفات</h3>
+
+    <div class="cats">
+        <div class="container d-flex flex-wrap">
+            <div class="content-area bg-yellow m-5 ">
+                <a href="#" class="text-yellow">حلويات</a>
+            </div>
+            <div class="content-area bg-blue m-5 ">
+                <a href="#" class="text-gray">مشويات</a>
+            </div>
+            <div class="content-area bg-red m-5 ">
+                <a href="#" class="text-red">مكسيكي</a>
+            </div>
+            <div class="content-area bg-green m-5 ">
+                <a href="#" class="text-green">ايطالي</a>
+            </div>
+            <div class="content-area bg-semi-green m-5 ">
+                <a href="#" class="text-gray">حلويات</a>
+            </div>
+            <div class="content-area bg-gray m-5 ">
+                <a href="#" class="text-gray">سوري</a>
+            </div>
+            <div class="content-area bg-yellow m-5 ">
+                <a href="#" class="text-yellow">وجبات اطفال</a>
+            </div>
+            <div class="content-area bg-yellow m-5 ">
+                <a href="#" class="text-yellow">مشويات عالفحم</a>
+            </div>
+            <div class="content-area bg-red m-5 ">
+                <a href="#" class="text-red">وجبات شاورما عربي</a>
+            </div>
+            <div class="content-area bg-blue m-5 ">
+                <a href="#" class="text-gray">حلويات</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/owl.min.js"></script>
+    <script>
+        $('#Header').load("Header.html");
+        // $('#Footer').load("Footer.html");
+    </script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(".owl-carousel.most-visted-owl").owlCarousel({
+            loop: true,
+            rtl: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            rtl: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>

@@ -6,8 +6,17 @@ a {
   text-decoration: none;
 }
 
+button {
+  outline: none !important;
+}
+
 .gold {
   color: #F5B544 !important;
+}
+
+.x-flip {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .breadcrumb {
@@ -423,5 +432,91 @@ a {
 
 .rating-section .add-comment-rate .add-comment button {
   color: #989898;
+}
+
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+/* ----------------------   table-serve page     -------------------*/
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+.table-serve-page .breadcrumb h3 {
+  padding: 14px 35px;
+  background-color: #30435070;
+  border-radius: 20px;
+  color: #fff;
+  margin-top: -30px;
+  width: 360px;
+  text-align: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.table-serve-page .serve-form .month-day-slider {
+  padding: 14px 35px;
+  background-color: #30435070;
+  border-radius: 20px;
+  color: #fff;
+  margin-top: 30px;
+  text-align: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.table-serve-page .serve-form .month-day-slider .owl-dots {
+  display: none !important;
+}
+
+.table-serve-page .serve-form .month-day-slider .owl-prev {
+  position: absolute;
+  right: 35%;
+  top: -8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.table-serve-page .serve-form .month-day-slider .owl-prev:hover {
+  background: #ffffff00;
+}
+
+.table-serve-page .serve-form .month-day-slider .owl-next {
+  position: absolute;
+  left: 35%;
+  top: -8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.table-serve-page .serve-form .month-day-slider .owl-next:hover {
+  background: #ffffff00;
+}
+
+.table-serve-page .serve-form .month-day-slider .day-carousel .owl-prev {
+  position: absolute;
+  right: -2%;
+  top: 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.table-serve-page .serve-form .month-day-slider .day-carousel .owl-prev:hover {
+  background: #ffffff00;
+}
+
+.table-serve-page .serve-form .month-day-slider .day-carousel .owl-next {
+  position: absolute;
+  left: -2%;
+  top: 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.table-serve-page .serve-form .month-day-slider .day-carousel .owl-next:hover {
+  background: #ffffff00;
+}
+
+.table-serve-page .serve-form .month-day-slider .day-carousel .disabled {
+  display: block;
 }
 /*# sourceMappingURL=mo-style.css.map */

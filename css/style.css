@@ -656,7 +656,7 @@
 
 .reservation-area .current-reservation .current-container {
     position: relative;
-    margin-top: 15px;
+    margin-top: 20px;
     border: 1px solid #fefefe;
     padding: 20px;
     border-radius: 25px;
@@ -685,12 +685,12 @@
     margin-left: 10px;
 }
 
-.reservation-area .food-type {
+.food-type {
     font-weight: 500;
-    color: #383838;
+    color: #304350;
 }
 
-.reservation-area .resturant-name {
+.resturant-name {
     font-size: 1.25rem;
     color: var(--main-color);
 }
@@ -706,11 +706,11 @@
     justify-content: space-between;
 }
 
-.reservation-area .current-reservation .reservation-details .resurvation-info span {
+/* .reservation-area .current-reservation .reservation-details .resurvation-info span {
     font-weight: 500;
     color: #000;
     font-size: 1rem;
-}
+} */
 
 .reservation-area .current-reservation .reserve-btns {
     display: flex;
@@ -723,7 +723,7 @@
 .reservation-area .current-reservation .reserve-btns .btn-cancel {
     padding: 10px 25px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 25px;
     font-weight: 500;
     transition: .5s;
     box-shadow: none;
@@ -754,7 +754,7 @@
     color: #fff;
 }
 
-.reservation-area .current-reservation .warnning {
+.warnning {
     width: 100%;
     text-align: center;
     border: 1px dashed #919191;
@@ -762,14 +762,15 @@
     padding: 10px;
 }
 
-.reservation-area .current-reservation .warnning p {
+.warnning p {
     font-size: 18px;
     font-weight: bold;
     width: 75%;
     margin: auto;
+    color: #304350;
 }
 
-.reservation-area .current-reservation .warnning.cost {
+.warnning.cost {
     padding: 20px;
 }
 
@@ -799,7 +800,7 @@
 
 .reservation-area .prev-reservation .prev-container {
     position: relative;
-    margin-top: 15px;
+    margin-top: 20px;
     border: 1px solid #fefefe;
     padding: 20px;
     border-radius: 25px;
@@ -814,4 +815,92 @@
 .prev-reservation .reserve-btns .btn-pay,
 .prev-reservation .reserve-btns .btn-call {
     border-radius: 20px;
+}
+
+.reservation-status {
+    position: absolute;
+    width: 100px;
+    left: 20px;
+    top: -15px;
+    height: 30px;
+    align-items: center;
+    border-radius: 12px;
+    color: #fff;
+    padding: 10px;
+}
+
+.reservation-status.confirmed {
+    background-color: var(--main-color);
+}
+
+.reservation-status.canceled {
+    background-color: #FF1700;
+}
+
+/* the cart page style  */
+.cart-item {
+    width: 100%;
+    background-color: #FFECD1;
+    border-radius: 25px;
+}
+
+.cart-item .resturant-details {
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.cart-item .customer-img {
+    width: 100px;
+    height: 100px;
+}
+
+.cart-item .customer-img img {
+    width: 100%;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+}
+
+.cart-item .order-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-item .order-btns .btn-edit,
+.cart-item .order-btns .btn-cancel,
+.cart-item .order-btns .btn-pay {
+    padding: 5px 15px;
+    border: 1px solid;
+    border-radius: 25px;
+    font-weight: 500;
+    text-align: center;
+    transition: 1s;
+    box-shadow: none;
+}
+
+.cart-item .order-btns .btn-edit {
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.cart-item .order-btns .btn-cancel {
+    color: #FF1700;
+    border-color: #FF1700;
+}
+
+.cart-item .order-btns .btn-edit:hover,
+.cart-item .order-btns .btn-cancel:hover {
+    color: #fff;
+}
+
+.cart-item .order-btns .btn-edit:hover {
+    background-color: var(--main-color);
+}
+
+.cart-item .order-btns .btn-cancel:hover {
+    background-color: #FF1700;
+}
+
+.cart-item .order-btns .btn-pay {
+    color: #fff;
+    background-color: var(--main-color);
 }

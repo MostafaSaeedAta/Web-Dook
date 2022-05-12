@@ -519,4 +519,15 @@ button {
 .table-serve-page .serve-form .month-day-slider .day-carousel .disabled {
   display: block;
 }
+
+.restaurant-details .resturants .item .text-content .add-meal::before {
+  content: "";
+  position: absolute;
+  border: 27px solid transparent;
+  bottom: 130%;
+  left: -1px;
+  border-bottom-left-radius: 30px;
+  -webkit-box-shadow: -12px 0px 0 0 #fff;
+          box-shadow: -12px 0px 0 0 #fff;
+}
 /*# sourceMappingURL=mo-style.css.map */

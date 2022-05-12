@@ -537,5 +537,15 @@ button {
         
     }
 
-
+ 
 }
+
+.restaurant-details .resturants .item .text-content .add-meal::before {
+    content: "";
+    position: absolute;
+    border: 27px solid transparent;
+    bottom: 130%;
+    left: -1px;
+    border-bottom-left-radius: 30px;
+    box-shadow: -12px 0px 0 0 #fff;
+  }

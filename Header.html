@@ -8,7 +8,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active d-flex" aria-current="page" href="index.html">
+                    <a class="nav-link d-flex" aria-current="page" href="index.html">
                         <p class="text my-0 mx-3">الرئيسية</p>
                         <i class="fas fa-home"></i>
                     </a>
@@ -26,7 +26,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-flex" aria-current="page" href="#">
+                    <a class="nav-link d-flex" aria-current="page" href="cart.html">
                         <p class="text my-0 mx-3">عربة التسوق</p>
                         <i class="fas fa-shopping-cart"></i>
                     </a>
@@ -230,4 +230,13 @@
         });
     }
     navItem.forEach((item) => item.addEventListener("click", activeLink));
+
+    jQuery(function ($) {
+        var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
+        $('.navbar-nav .nav-item .nav-link').each(function () {
+            if (this.href === path) {
+                $(this).addClass('active');
+            }
+        });
+    });
 </script>

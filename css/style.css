@@ -656,7 +656,7 @@
 
 .reservation-area .current-reservation .current-container {
     position: relative;
-    margin-top: 15px;
+    margin-top: 20px;
     border: 1px solid #fefefe;
     padding: 20px;
     border-radius: 25px;
@@ -706,11 +706,11 @@
     justify-content: space-between;
 }
 
-.reservation-area .current-reservation .reservation-details .resurvation-info span {
+/* .reservation-area .current-reservation .reservation-details .resurvation-info span {
     font-weight: 500;
     color: #000;
     font-size: 1rem;
-}
+} */
 
 .reservation-area .current-reservation .reserve-btns {
     display: flex;
@@ -723,7 +723,7 @@
 .reservation-area .current-reservation .reserve-btns .btn-cancel {
     padding: 10px 25px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 25px;
     font-weight: 500;
     transition: .5s;
     box-shadow: none;
@@ -799,7 +799,7 @@
 
 .reservation-area .prev-reservation .prev-container {
     position: relative;
-    margin-top: 15px;
+    margin-top: 20px;
     border: 1px solid #fefefe;
     padding: 20px;
     border-radius: 25px;
@@ -814,4 +814,24 @@
 .prev-reservation .reserve-btns .btn-pay,
 .prev-reservation .reserve-btns .btn-call {
     border-radius: 20px;
+}
+
+.reservation-status {
+    position: absolute;
+    width: 100px;
+    left: 20px;
+    top: -15px;
+    height: 30px;
+    align-items: center;
+    border-radius: 12px;
+    color: #fff;
+    padding: 10px;
+}
+
+.reservation-status.confirmed {
+    background-color: var(--main-color);
+}
+
+.reservation-status.canceled {
+    background-color: #FF1700;
 }

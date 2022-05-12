@@ -450,6 +450,7 @@ button {
 /* -----------------------------------------------*/
 
 .table-serve-page {
+
     .breadcrumb h3 {
         padding: 14px 35px;
         background-color: #30435070;
@@ -509,19 +510,19 @@ button {
                     top: 0px;
                     font-size: 16px;
                     font-weight: bold;
-    
+
                     &:hover {
                         background: #ffffff00;
                     }
                 }
-    
+
                 .owl-next {
                     position: absolute;
                     left: -2%;
                     top: 0px;
                     font-size: 16px;
                     font-weight: bold;
-    
+
                     &:hover {
                         background: #ffffff00;
                     }
@@ -534,11 +535,72 @@ button {
 
         }
 
-        
+
+        .person-slider {
+            box-shadow: 0px 0px 30px #ddd;
+            padding: 30px;
+            border-radius: 20px;
+
+            .item {
+                color: $text-color;
+            }
+
+
+            .person-carousel {
+                background: #f9f9f9;
+                padding: 15px;
+                border-radius: 20px;
+
+
+                .owl-prev {
+                    position: absolute;
+                    right: 2%;
+                    top: 10px;
+                    color: #CED1D4;
+                    font-size: 16px;
+                    font-weight: bold;
+                    transition: color .3s ease-in-out;
+
+                    &:hover {
+                        background: #ffffff00;
+                        color: $sec-color;
+                    }
+                }
+
+                .owl-next {
+                    position: absolute;
+                    left: 2%;
+                    top: 10px;
+                    color: #CED1D4;
+                    font-size: 16px;
+                    font-weight: bold;
+                    transition: color .3s ease-in-out;
+
+                    &:hover {
+                        background: #ffffff00;
+                        color: $sec-color;
+                    }
+                }
+
+                .disabled {
+                    display: block;
+                }
+
+                .owl-dots {
+                    display: none !important;
+                }
+            }
+
+
+        }
+
+
     }
 
- 
+
 }
+
+
 
 .restaurant-details .resturants .item .text-content .add-meal::before {
     content: "";
@@ -548,4 +610,4 @@ button {
     left: -1px;
     border-bottom-left-radius: 30px;
     box-shadow: -12px 0px 0 0 #fff;
-  }
+}

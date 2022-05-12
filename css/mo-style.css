@@ -520,6 +520,63 @@ button {
   display: block;
 }
 
+.table-serve-page .serve-form .person-slider {
+  -webkit-box-shadow: 0px 0px 30px #ddd;
+          box-shadow: 0px 0px 30px #ddd;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.table-serve-page .serve-form .person-slider .item {
+  color: #091B3D;
+}
+
+.table-serve-page .serve-form .person-slider .person-carousel {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.table-serve-page .serve-form .person-slider .person-carousel .owl-prev {
+  position: absolute;
+  right: 2%;
+  top: 10px;
+  color: #CED1D4;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+.table-serve-page .serve-form .person-slider .person-carousel .owl-prev:hover {
+  background: #ffffff00;
+  color: #FF7062;
+}
+
+.table-serve-page .serve-form .person-slider .person-carousel .owl-next {
+  position: absolute;
+  left: 2%;
+  top: 10px;
+  color: #CED1D4;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+.table-serve-page .serve-form .person-slider .person-carousel .owl-next:hover {
+  background: #ffffff00;
+  color: #FF7062;
+}
+
+.table-serve-page .serve-form .person-slider .person-carousel .disabled {
+  display: block;
+}
+
+.table-serve-page .serve-form .person-slider .person-carousel .owl-dots {
+  display: none !important;
+}
+
 .restaurant-details .resturants .item .text-content .add-meal::before {
   content: "";
   position: absolute;

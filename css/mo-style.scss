@@ -2,6 +2,41 @@ $main-color: #03A63D;
 $sec-color: #FF7062;
 $text-color: #091B3D;
 
+@font-face {
+    font-family: 'Dubai Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dubai Regular'), url('../webfonts/') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Dubai Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dubai Light'), url('../webfonts/Dubai-Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Dubai Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dubai Medium'), url('../webfonts/Dubai-Medium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Dubai Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dubai Bold'), url('../webfonts/Dubai-Bold.woff') format('woff');
+    }
+
+    // body {
+    //     font-family: 'Dubai';
+    // }
+
 p {
     margin-bottom: 0;
 }
@@ -21,6 +56,20 @@ button {
 .x-flip {
     transform: rotate(180deg);
 }
+
+.my-active-time {
+    background-color: $main-color;
+    
+
+    p {
+        color: #fff !important;
+    }
+}
+
+
+
+
+
 
 .breadcrumb {
     background-image: url(../imgs/bread-crumb.jpg);
@@ -589,9 +638,75 @@ button {
                 .owl-dots {
                     display: none !important;
                 }
+
+                .item {
+
+                    a {
+                        color: $text-color;
+                    }
+                }
             }
 
 
+        }
+
+
+        .time-div {
+            border: 1px solid $main-color;
+            border-radius: 12px;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                background-color: $main-color;
+            }
+
+            p {
+                color: $main-color;
+                transition: color .3s ease-in-out;
+            }
+            
+            &:hover p {
+                color: #fff;
+
+            }
+            
+        }
+
+
+        .final-serve {
+            margin: 50px 0;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $main-color;
+            border-radius: 20px;
+            color: #fff;
+
+            .final-person {
+                p {
+                    font-size: 30px;
+                }
+            }
+
+            .final-date {
+                font-weight: bold;
+            }
+
+            .btn-serve {
+                button {
+                    color:  #fff;
+                    border-radius: 12px;
+                    font-weight: bold;
+                    background-color: #00772A ;
+                }
+            }
+
+            
         }
 
 
@@ -600,7 +715,20 @@ button {
 
 }
 
+.serve-modal-title {
+    color: $main-color;
+    font-size: 30px;
+    font-weight: bold;
+}
 
+.btn-confirm-serve {
+    width: 80%;
+    background-color: $main-color;
+    color: #fff;
+    padding: 12px ;
+    border-radius: 20px;
+
+}
 
 .restaurant-details .resturants .item .text-content .add-meal::before {
     content: "";

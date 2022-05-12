@@ -11,3 +11,4 @@ $('[data-fancybox]').fancybox({
     ],
     transitionEffect: "slide",
   });
+

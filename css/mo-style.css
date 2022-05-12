@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'Dubai Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dubai Regular"), url("../webfonts/") format("woff");
+}
+
+@font-face {
+  font-family: 'Dubai Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dubai Light"), url("../webfonts/Dubai-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Dubai Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dubai Medium"), url("../webfonts/Dubai-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Dubai Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dubai Bold"), url("../webfonts/Dubai-Bold.woff") format("woff");
+}
+
 p {
   margin-bottom: 0;
 }
@@ -17,6 +45,14 @@ button {
 .x-flip {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.my-active-time {
+  background-color: #03A63D;
+}
+
+.my-active-time p {
+  color: #fff !important;
 }
 
 .breadcrumb {
@@ -575,6 +611,81 @@ button {
 
 .table-serve-page .serve-form .person-slider .person-carousel .owl-dots {
   display: none !important;
+}
+
+.table-serve-page .serve-form .person-slider .person-carousel .item a {
+  color: #091B3D;
+}
+
+.table-serve-page .serve-form .time-div {
+  border: 1px solid #03A63D;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.table-serve-page .serve-form .time-div:hover {
+  background-color: #03A63D;
+}
+
+.table-serve-page .serve-form .time-div p {
+  color: #03A63D;
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+.table-serve-page .serve-form .time-div:hover p {
+  color: #fff;
+}
+
+.table-serve-page .serve-form .final-serve {
+  margin: 50px 0;
+  padding: 15px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #03A63D;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.table-serve-page .serve-form .final-serve .final-person p {
+  font-size: 30px;
+}
+
+.table-serve-page .serve-form .final-serve .final-date {
+  font-weight: bold;
+}
+
+.table-serve-page .serve-form .final-serve .btn-serve button {
+  color: #fff;
+  border-radius: 12px;
+  font-weight: bold;
+  background-color: #00772A;
+}
+
+.serve-modal-title {
+  color: #03A63D;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.btn-confirm-serve {
+  width: 80%;
+  background-color: #03A63D;
+  color: #fff;
+  padding: 12px;
+  border-radius: 20px;
 }
 
 .restaurant-details .resturants .item .text-content .add-meal::before {

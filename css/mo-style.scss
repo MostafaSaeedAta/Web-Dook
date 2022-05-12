@@ -10,10 +10,17 @@ a {
     text-decoration: none;
 }
 
+button {
+    outline: none !important;
+}
+
 .gold {
     color: #F5B544 !important;
 }
 
+.x-flip {
+    transform: rotate(180deg);
+}
 
 .breadcrumb {
     background-image: url(../imgs/bread-crumb.jpg);
@@ -428,3 +435,117 @@ a {
 
     }
 }
+
+
+
+
+
+
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+/* ----------------------   table-serve page     -------------------*/
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+
+.table-serve-page {
+    .breadcrumb h3 {
+        padding: 14px 35px;
+        background-color: #30435070;
+        border-radius: 20px;
+        color: #fff;
+        margin-top: -30px;
+        width: 360px;
+        text-align: center;
+        backdrop-filter: blur(10px);
+    }
+
+    .serve-form {
+
+        .month-day-slider {
+            padding: 14px 35px;
+            background-color: #30435070;
+            border-radius: 20px;
+            color: #fff;
+            margin-top: 30px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+
+            .owl-dots {
+                display: none !important;
+            }
+
+            .owl-prev {
+                position: absolute;
+                right: 35%;
+                top: -8px;
+                font-size: 16px;
+                font-weight: bold;
+
+                &:hover {
+                    background: #ffffff00;
+                }
+            }
+
+            .owl-next {
+                position: absolute;
+                left: 35%;
+                top: -8px;
+                font-size: 16px;
+                font-weight: bold;
+
+                &:hover {
+                    background: #ffffff00;
+                }
+            }
+
+
+            .day-carousel {
+
+                .owl-prev {
+                    position: absolute;
+                    right: -2%;
+                    top: 0px;
+                    font-size: 16px;
+                    font-weight: bold;
+    
+                    &:hover {
+                        background: #ffffff00;
+                    }
+                }
+    
+                .owl-next {
+                    position: absolute;
+                    left: -2%;
+                    top: 0px;
+                    font-size: 16px;
+                    font-weight: bold;
+    
+                    &:hover {
+                        background: #ffffff00;
+                    }
+                }
+
+                .disabled {
+                    display: block;
+                }
+            }
+
+        }
+
+        
+    }
+
+ 
+}
+
+.restaurant-details .resturants .item .text-content .add-meal::before {
+    content: "";
+    position: absolute;
+    border: 27px solid transparent;
+    bottom: 130%;
+    left: -1px;
+    border-bottom-left-radius: 30px;
+    box-shadow: -12px 0px 0 0 #fff;
+  }

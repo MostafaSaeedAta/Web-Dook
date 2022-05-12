@@ -6,8 +6,17 @@ a {
   text-decoration: none;
 }
 
+button {
+  outline: none !important;
+}
+
 .gold {
   color: #F5B544 !important;
+}
+
+.x-flip {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .breadcrumb {
@@ -24,7 +33,7 @@ a {
   border-radius: 20px;
   margin-top: -120px;
   -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 .restaurant-details .rest-infos .res-name {
@@ -84,15 +93,15 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 .restaurant-details .resturants .item .text-content {
   position: relative;
   border-radius: 0px 0px 43px 43px;
   -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   padding: 15px 20px 14px 10px;
 }
 
@@ -103,7 +112,7 @@ a {
   left: -26px;
   border-radius: 18px 50px 22px 22px;
   -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
+          transform: rotate(0deg);
   background-color: #fff;
   width: 78px;
   height: 66px;
@@ -161,7 +170,7 @@ a {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background-color: #F29F05;
   color: #fff;
   border-radius: 20px;
@@ -170,11 +179,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -197,11 +206,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #091B3D;
   font-weight: bold;
   margin-bottom: 10px;
@@ -231,11 +240,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-image: url(../imgs/map.png);
   background-size: cover;
   border-radius: 12px;
@@ -253,11 +262,11 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .rest-about .gps .rest-address .location-div .location-details p {
@@ -291,11 +300,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .rating-section .rating-div .right-div .rate-star {
@@ -375,11 +384,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: white;
   padding: 10px 18px;
   border-radius: 20px;
@@ -418,15 +427,98 @@ a {
 
 .rating-section .add-comment-rate .add-comment:hover {
   -webkit-box-shadow: 0px 3px 6px #ddd;
-  box-shadow: 0px 3px 6px #ddd;
+          box-shadow: 0px 3px 6px #ddd;
 }
 
 .rating-section .add-comment-rate .add-comment button {
   color: #989898;
 }
 
-/*# sourceMappingURL=mo-style.css.map */
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+/* ----------------------   table-serve page     -------------------*/
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+.table-serve-page .breadcrumb h3 {
+  padding: 14px 35px;
+  background-color: #30435070;
+  border-radius: 20px;
+  color: #fff;
+  margin-top: -30px;
+  width: 360px;
+  text-align: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
 
+.table-serve-page .serve-form .month-day-slider {
+  padding: 14px 35px;
+  background-color: #30435070;
+  border-radius: 20px;
+  color: #fff;
+  margin-top: 30px;
+  text-align: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.table-serve-page .serve-form .month-day-slider .owl-dots {
+  display: none !important;
+}
+
+.table-serve-page .serve-form .month-day-slider .owl-prev {
+  position: absolute;
+  right: 35%;
+  top: -8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.table-serve-page .serve-form .month-day-slider .owl-prev:hover {
+  background: #ffffff00;
+}
+
+.table-serve-page .serve-form .month-day-slider .owl-next {
+  position: absolute;
+  left: 35%;
+  top: -8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.table-serve-page .serve-form .month-day-slider .owl-next:hover {
+  background: #ffffff00;
+}
+
+.table-serve-page .serve-form .month-day-slider .day-carousel .owl-prev {
+  position: absolute;
+  right: -2%;
+  top: 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.table-serve-page .serve-form .month-day-slider .day-carousel .owl-prev:hover {
+  background: #ffffff00;
+}
+
+.table-serve-page .serve-form .month-day-slider .day-carousel .owl-next {
+  position: absolute;
+  left: -2%;
+  top: 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.table-serve-page .serve-form .month-day-slider .day-carousel .owl-next:hover {
+  background: #ffffff00;
+}
+
+.table-serve-page .serve-form .month-day-slider .day-carousel .disabled {
+  display: block;
+}
 
 .restaurant-details .resturants .item .text-content .add-meal::before {
   content: "";
@@ -435,5 +527,7 @@ a {
   bottom: 130%;
   left: -1px;
   border-bottom-left-radius: 30px;
-  box-shadow: -12px 0px 0 0 #fff;
+  -webkit-box-shadow: -12px 0px 0 0 #fff;
+          box-shadow: -12px 0px 0 0 #fff;
 }
+/*# sourceMappingURL=mo-style.css.map */

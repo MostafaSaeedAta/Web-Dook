@@ -12,8 +12,6 @@ $('[data-fancybox]').fancybox({
     transitionEffect: "slide",
   });
 
-<<<<<<< HEAD
-=======
 
 
   
@@ -66,4 +64,3 @@ $(document).on('click','.contents',function(e){
     //         $("body").find(".list-group").removeClass("active");
     //     }
     // });
->>>>>>> f70174603830b1032ad1fefe292663e264784d31

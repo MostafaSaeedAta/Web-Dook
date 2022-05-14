@@ -459,18 +459,22 @@
 
 .most-visted-owl .img-content .fav {
     position: absolute;
-    left: 15px;
-    top: 20px;
-    width: 40px;
+    left: 13px;
+    top: 17px;
+    width: 45px;
     background-color: #090909;
     opacity: .9;
     border-radius: 10px;
-    height: 30px;
+    height: 35px;
     text-align: center;
-    line-height: 30px;
+    line-height: 40px;
     color: #fff;
     cursor: pointer;
 
+}
+
+.most-visted-owl .img-content .fav i {
+    font-size: 20px;
 }
 
 .most-visted-owl .card-details .resturant-details {
@@ -995,16 +999,19 @@
     position: absolute;
     left: -15px;
     top: -15px;
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
     background-position: 0 0;
     cursor: pointer;
     transition: background-position 1s steps(28);
     transition-duration: 0s;
+    opacity: 0;
 }
 
 .heart.is-active {
     transition-duration: 1s;
     background-position: -2800px 0;
+    opacity: 1;
+
 }

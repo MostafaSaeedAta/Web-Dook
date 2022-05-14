@@ -116,6 +116,10 @@ button {
   color: #304350;
 }
 
+.restaurant-details .resturants .owl-item {
+  display: unset;
+}
+
 .restaurant-details .resturants .item {
   background-image: url(../imgs/photo-1.webp);
   background-size: cover;
@@ -500,6 +504,19 @@ button {
           backdrop-filter: blur(10px);
 }
 
+.table-serve-page .serve-form .month-day-slider button {
+  background: transparent;
+  color: unset;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .table-serve-page .serve-form .month-day-slider .owl-dots {
   display: none !important;
 }
@@ -699,7 +716,53 @@ button {
           box-shadow: -12px 0px 0 0 #fff;
 }
 
+@media (min-width: 469px) and (max-width: 991px) {
+  .table-serve-page .serve-form .month-day-slider .owl-prev {
+    right: 20%;
+  }
+  .table-serve-page .serve-form .month-day-slider .owl-next {
+    left: 19%;
+  }
+}
+
 @media (max-width: 468px) {
+  .table-serve-page .serve-form .final-serve {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .table-serve-page .serve-form .final-serve .final-date {
+    padding: 15px 0;
+  }
+  .table-serve-page .serve-form .time-div p {
+    font-size: 12px;
+  }
+  .table-serve-page .serve-form .month-day-slider .owl-prev {
+    right: 18%;
+    top: -6px;
+  }
+  .table-serve-page .serve-form .month-day-slider .owl-next {
+    left: 15%;
+    top: -6px;
+  }
+  .table-serve-page .breadcrumb h3 {
+    width: 320px;
+  }
+  .cust-rate {
+    left: 0px;
+    top: 10px;
+  }
+  .cust-rate span,
+  .cust-rate i {
+    font-size: 12px;
+  }
+  .cust-name {
+    font-size: 15px;
+  }
+  .cust-text {
+    font-size: 12px;
+  }
   .add-comment-rate {
     margin-top: 15px;
   }

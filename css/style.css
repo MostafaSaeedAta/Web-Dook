@@ -183,7 +183,7 @@
 
 @media (max-width:768px) {
     .toggeler .list-group {
-        right: -100px;
+        right: -115px;
     }
 }
 
@@ -749,7 +749,7 @@
 .reservation-area .current-reservation .reserve-btns .btn-call,
 .reservation-area .current-reservation .reserve-btns .btn-pay,
 .reservation-area .current-reservation .reserve-btns .btn-cancel {
-    padding: 10px 25px;
+    padding: 10px 15px;
     cursor: pointer;
     border-radius: 25px;
     font-weight: 500;
@@ -843,6 +843,7 @@
 .prev-reservation .reserve-btns .btn-pay,
 .prev-reservation .reserve-btns .btn-call {
     border-radius: 20px;
+    padding: 10px 5px;
 }
 
 .reservation-status {

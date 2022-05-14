@@ -698,4 +698,66 @@ button {
   -webkit-box-shadow: -12px 0px 0 0 #fff;
           box-shadow: -12px 0px 0 0 #fff;
 }
+
+@media (max-width: 468px) {
+  .add-comment-rate {
+    margin-top: 15px;
+  }
+  .restaurant-details .rest-infos {
+    padding: 25px;
+  }
+  .restaurant-details .rest-infos .rest-btns .btn {
+    font-size: 13px;
+  }
+  .rest-about .content {
+    padding: 35px !important;
+  }
+  .rest-about .gps {
+    padding: 35px;
+  }
+  .rest-about .gps .rest-address .location-div {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rest-about .gps .rest-address .location-div .img-div {
+    margin-bottom: 10px;
+  }
+  .rest-about .gps .rest-address .location-div .location-details a {
+    margin-top: 8px;
+    text-align: center;
+  }
+  .rating-section .rating-div {
+    padding: 15px 20px;
+  }
+  .rating-section .rating-div .middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .rating-section .rating-div .bar-5,
+  .rating-section .rating-div .bar-4,
+  .rating-section .rating-div .bar-3,
+  .rating-section .rating-div .bar-2,
+  .rating-section .rating-div .bar-1 {
+    height: 15px;
+  }
+}
 /*# sourceMappingURL=mo-style.css.map */

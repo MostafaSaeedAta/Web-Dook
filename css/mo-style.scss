@@ -7,35 +7,35 @@ $text-color: #091B3D;
     font-style: normal;
     font-weight: normal;
     src: local('Dubai Regular'), url('../webfonts/') format('woff');
-    }
-    
+}
 
-    @font-face {
+
+@font-face {
     font-family: 'Dubai Light';
     font-style: normal;
     font-weight: normal;
     src: local('Dubai Light'), url('../webfonts/Dubai-Light.woff') format('woff');
-    }
-    
+}
 
-    @font-face {
+
+@font-face {
     font-family: 'Dubai Medium';
     font-style: normal;
     font-weight: normal;
     src: local('Dubai Medium'), url('../webfonts/Dubai-Medium.woff') format('woff');
-    }
-    
+}
 
-    @font-face {
+
+@font-face {
     font-family: 'Dubai Bold';
     font-style: normal;
     font-weight: normal;
     src: local('Dubai Bold'), url('../webfonts/Dubai-Bold.woff') format('woff');
-    }
+}
 
-    // body {
-    //     font-family: 'Dubai';
-    // }
+// body {
+//     font-family: 'Dubai';
+// }
 
 p {
     margin-bottom: 0;
@@ -59,7 +59,7 @@ button {
 
 .my-active-time {
     background-color: $main-color;
-    
+
 
     p {
         color: #fff !important;
@@ -668,12 +668,12 @@ button {
                 color: $main-color;
                 transition: color .3s ease-in-out;
             }
-            
+
             &:hover p {
                 color: #fff;
 
             }
-            
+
         }
 
 
@@ -699,14 +699,14 @@ button {
 
             .btn-serve {
                 button {
-                    color:  #fff;
+                    color: #fff;
                     border-radius: 12px;
                     font-weight: bold;
-                    background-color: #00772A ;
+                    background-color: #00772A;
                 }
             }
 
-            
+
         }
 
 
@@ -725,7 +725,7 @@ button {
     width: 80%;
     background-color: $main-color;
     color: #fff;
-    padding: 12px ;
+    padding: 12px;
     border-radius: 20px;
 
 }
@@ -738,4 +738,66 @@ button {
     left: -1px;
     border-bottom-left-radius: 30px;
     box-shadow: -12px 0px 0 0 #fff;
+}
+
+
+@media (max-width: 468px) {
+    .add-comment-rate {
+        margin-top: 15px;
+    }
+
+    .restaurant-details .rest-infos {
+        padding: 25px;
+    }
+
+    .restaurant-details .rest-infos .rest-btns .btn {
+        font-size: 13px;
+    }
+
+    .rest-about .content {
+        padding: 35px !important;
+    }
+
+    .rest-about .gps {
+        padding: 35px;
+    }
+
+    .rest-about .gps .rest-address .location-div {
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 12px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .rest-about .gps .rest-address .location-div .img-div {
+        margin-bottom: 10px;
+    }
+
+    .rest-about .gps .rest-address .location-div .location-details a {
+        margin-top: 8px;
+        text-align: center;
+    }
+
+    .rating-section .rating-div {
+        padding: 15px 20px;
+    }
+
+    .rating-section .rating-div .middle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rating-section .rating-div .bar-5,
+    .rating-section .rating-div .bar-4,
+    .rating-section .rating-div .bar-3,
+    .rating-section .rating-div .bar-2,
+    .rating-section .rating-div .bar-1 {
+        height: 15px;
+    }
 }

@@ -211,7 +211,7 @@
                             <span>5.0</span>
                             <i class="fas fa-star"></i>
                         </div>
-                        <div class="fav"><i class="far fa-heart"></i></div>
+                        <div class="heart"></div>
                     </div>
                     <div class="card-details">
                         <div class="resturant-details">
@@ -234,7 +234,7 @@
                             <span>5.0</span>
                             <i class="fas fa-star"></i>
                         </div>
-                        <div class="fav"><i class="far fa-heart"></i></div>
+                        <div class="heart"></div>
                     </div>
                     <div class="card-details">
                         <div class="resturant-details">
@@ -257,7 +257,7 @@
                             <span>5.0</span>
                             <i class="fas fa-star"></i>
                         </div>
-                        <div class="fav"><i class="far fa-heart"></i></div>
+                        <div class="heart"></div>
                     </div>
                     <div class="card-details">
                         <div class="resturant-details">
@@ -280,7 +280,7 @@
                             <span>5.0</span>
                             <i class="fas fa-star"></i>
                         </div>
-                        <div class="fav"><i class="far fa-heart"></i></div>
+                        <div class="heart"></div>
                     </div>
                     <div class="card-details">
                         <div class="resturant-details">
@@ -303,7 +303,7 @@
                             <span>5.0</span>
                             <i class="fas fa-star"></i>
                         </div>
-                        <div class="fav"><i class="far fa-heart"></i></div>
+                        <div class="heart"></div>
                     </div>
                     <div class="card-details">
                         <div class="resturant-details">
@@ -326,7 +326,7 @@
                             <span>5.0</span>
                             <i class="fas fa-star"></i>
                         </div>
-                        <div class="fav"><i class="far fa-heart"></i></div>
+                        <div class="heart"></div>
                     </div>
                     <div class="card-details">
                         <div class="resturant-details">
@@ -349,7 +349,7 @@
                             <span>5.0</span>
                             <i class="fas fa-star"></i>
                         </div>
-                        <div class="fav"><i class="far fa-heart"></i></div>
+                        <div class="heart"></div>
                     </div>
                     <div class="card-details">
                         <div class="resturant-details">
@@ -372,7 +372,7 @@
                             <span>5.0</span>
                             <i class="fas fa-star"></i>
                         </div>
-                        <div class="fav"><i class="far fa-heart"></i></div>
+                        <div class="heart"></i></div>
                     </div>
                     <div class="card-details">
                         <div class="resturant-details">
@@ -395,7 +395,7 @@
                             <span>5.0</span>
                             <i class="fas fa-star"></i>
                         </div>
-                        <div class="fav"><i class="far fa-heart"></i></div>
+                        <div class="heart"></i></div>
                     </div>
                     <div class="card-details">
                         <div class="resturant-details">
@@ -460,10 +460,10 @@
                     items: 1,
                     nav: true
                 },
-                // 600: {
-                //     items: 2,
-                //     nav: false
-                // },
+                600: {
+                    items: 2,
+                    nav: false
+                },
                 1000: {
                     items: 3,
                     nav: true,
@@ -472,23 +472,14 @@
             }
         })
     </script>
-    <!-- 
-    <script>
-        const button = document.querySelector(".fav i");
 
-        button.addEventListener("click", () => {
-            console.log("hi");
-            if (button.classList.contains("far")) {
-                button.classList.remove("far");
-                button.classList.add("fas");
-                button.style.color = 'red';
-            } else {
-                button.classList.remove("fas");
-                button.classList.add("far");
-                button.style.color = '#fff';
-            }
+    <script>
+        $(function () {
+            $(".heart").on("click", function () {
+                $(this).toggleClass("is-active");
+            });
         });
-    </script> -->
+    </script>
 
 </body>
 

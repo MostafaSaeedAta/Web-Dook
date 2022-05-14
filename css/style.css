@@ -67,13 +67,6 @@
     box-shadow: none;
 }
 
-.navbar-light .navbar-toggler .navbar-toggler-icon {
-    background-image: url("https://cdn-icons.flaticon.com/png/512/3018/premium/3018465.png?token=exp=1652518383~hmac=aa83352a3e9389dcc93b973731d84f95");
-}
-
-.navbar-light .navbar-toggler.collapsed .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
 
 .navbar-nav {
     flex: 1;
@@ -171,6 +164,7 @@
     display: block;
 }
 
+
 .toggeler .list-group {
     position: absolute;
     width: 300px;
@@ -185,6 +179,12 @@
     padding-top: 80px;
     cursor: default;
     overflow: hidden;
+}
+
+@media (max-width:768px) {
+    .toggeler .list-group {
+        right: -115px;
+    }
 }
 
 .toggeler .list-group .list-group-item {
@@ -279,7 +279,7 @@
 /* resturants style  */
 .resturants .item .img-container {
     background-image: url(../imgs/photo-2.webp);
-    width: 315px;
+    min-width: 290px;
     background-size: cover;
     height: 275px;
     border-radius: 20%;
@@ -749,7 +749,7 @@
 .reservation-area .current-reservation .reserve-btns .btn-call,
 .reservation-area .current-reservation .reserve-btns .btn-pay,
 .reservation-area .current-reservation .reserve-btns .btn-cancel {
-    padding: 10px 25px;
+    padding: 10px 15px;
     cursor: pointer;
     border-radius: 25px;
     font-weight: 500;
@@ -843,6 +843,7 @@
 .prev-reservation .reserve-btns .btn-pay,
 .prev-reservation .reserve-btns .btn-call {
     border-radius: 20px;
+    padding: 10px 5px;
 }
 
 .reservation-status {
@@ -990,3 +991,20 @@
 }
 
 /* heart animation create  */
+.heart {
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    width: 75px;
+    height: 75px;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+    transition-duration: 0s;
+}
+
+.heart.is-active {
+    transition-duration: 1s;
+    background-position: -2800px 0;
+}

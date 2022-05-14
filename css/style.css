@@ -460,21 +460,21 @@
 .most-visted-owl .img-content .fav {
     position: absolute;
     left: 13px;
-    top: 17px;
+    top: 15px;
     width: 45px;
     background-color: #090909;
     opacity: .9;
     border-radius: 10px;
-    height: 35px;
+    height: 39px;
     text-align: center;
-    line-height: 40px;
+    line-height: 44px;
     color: #fff;
     cursor: pointer;
 
 }
 
 .most-visted-owl .img-content .fav i {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .most-visted-owl .card-details .resturant-details {

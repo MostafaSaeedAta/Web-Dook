@@ -1007,6 +1007,7 @@
     transition: background-position 1s steps(28);
     transition-duration: 0s;
     opacity: 0;
+    z-index: 999;
 }
 
 .heart.is-active {

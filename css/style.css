@@ -133,86 +133,39 @@
     line-height: 16px;
 }
 
-.toggeler {
-    position: relative;
-    text-align: center;
-    color: var(--main-color);
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 99;
-    background-color: #fff;
-}
-
-.toggeler .overlay {
-    background-color: #000000;
-    opacity: 0.4;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 2000px;
-    height: 2000px;
-    z-index: 98;
-    display: none;
-    cursor: default;
-}
-
-.toggeler .overlay.active {
-    display: block;
-}
-
-.toggeler .list-group.active {
-    display: block;
-}
-
-
-.toggeler .list-group {
-    position: absolute;
-    width: 300px;
-    right: 0;
-    top: 0px;
-    font-size: 18px;
-    padding: 20px;
-    z-index: 99;
-    background-color: #fff;
-    display: none;
-    border-radius: 8px;
-    padding-top: 80px;
-    cursor: default;
-    overflow: hidden;
-}
-
-@media (max-width:768px) {
-    .toggeler .list-group {
-        right: -115px;
-    }
-}
-
-.toggeler .list-group .list-group-item {
-    position: relative;
-    margin: 10px 0;
-    border: none;
-    border-radius: 20px;
-    background-color: var(--main-color);
-    color: #fff;
-    justify-content: space-between;
+.navbar-nav .nav-item .dropdown-menu.show {
+    top: 130%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    font-size: 16px;
-    cursor: pointer;
-    overflow: hidden;
-    flex-direction: row-reverse;
+    gap: 4px;
 }
 
-.toggeler .list-group .list-group-item::before {
-    content: "";
-    position: absolute;
-    background-color: #000000;
-    right: -300px;
-    opacity: 0.1;
-    border-radius: 20px;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
+.dropdown-menu-dark img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
 }
+
+.dropdown-menu-dark li {
+    min-height: 45px;
+    margin: 0 15px;
+}
+
+.dropdown-menu-dark .dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    transition: 1s;
+    line-height: 45px;
+}
+
+.dropdown-menu-dark .dropdown-item:hover {
+    color: var(--sec-color);
+}
+
+
 
 .owl-carousel.owl-rtl .owl-item {
     display: flex;
@@ -460,7 +413,7 @@
 .most-visted-owl .img-content .fav {
     position: absolute;
     left: 13px;
-    top: 15px;
+    top: 17px;
     width: 45px;
     background-color: #090909;
     opacity: .9;
@@ -1056,7 +1009,7 @@
 .rusturant-card .fav {
     position: absolute;
     left: 13px;
-    top: 15px;
+    top: 17px;
     width: 45px;
     background-color: #000000b0;
     opacity: .9;

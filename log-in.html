@@ -33,7 +33,7 @@
         <div class="logo mb-4"><img src="imgs/logo.png" alt=""></div>
         <h5 class="title mb-4">برجاء تسجيل الدخول للمتابعه</h5>
         <input type="text" placeholder="رقم الهاتف" class="phone" required>
-        <input type="text" placeholder="رمز التأكيد" class="code" style="display: none;">
+        <input type="text" placeholder="رمز التأكيد" class="code" style="display: none;" required>
         <button class="send-code">إرسال الرمز</button>
         <h6 class="signup-text mt-3 text-center">أو <span class="mt-2">سجل الأن</span></h6>
     </form>
@@ -61,7 +61,6 @@
         let sendCode = document.querySelector('.send-code');
         let codeInput = document.querySelector('.code')
         sendCode.addEventListener('click', (e) => {
-            e.preventDefault();
             codeInput.style = "display: block; height: 100%;";
             sendCode.textContent = 'تحقق';
         });

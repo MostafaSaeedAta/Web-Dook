@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Edit Profile</title>
+    <!-- icon -->
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" id="BootstrapLink" href="css/bootstrap.rtl.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- swipper -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <!-- owl -->
+    <link rel="stylesheet" href="css/owl.min.css">
+    <link rel="stylesheet" href="css/owl-def.min.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- custom style -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/edit-profile.css">
+
+</head>
+
+<body>
+    <!-- the header area  -->
+    <header id="Header" class="the-navbar">
+
+    </header>
+
+    <div class="edit-profile my-4">
+        <div class="container bootstrap snippets bootdey">
+            <h3 class="title">تعديل بيانات الملف الشخصي</h3>
+            <hr>
+            <div class="row">
+                <!-- right column -->
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                            class="avatar rounded-circle img-thumbnail" alt="avatar">
+                        <h6>. . . Upload a different photo</h6>
+
+                        <input type="file" class="form-control">
+                    </div>
+                </div>
+
+                <!-- edit form column -->
+                <div class="col-md-9 personal-info">
+                    <div class="alert alert-info alert-dismissable">
+                        <a class="panel-close close" data-dismiss="alert"
+                            style="cursor: pointer; text-decoration:none; font-size: 24px;">×</a>
+                        <i class="fa fa-coffee"></i>
+                        This is an <strong>.alert</strong>. Use this to show important messages to the user.
+                    </div>
+                    <h4 class="title">البيانات الشخصية</h4>
+
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group my-3">
+                            <label class="col-lg-3 control-label">الأسم الأول :</label>
+                            <div class="col-lg-8">
+                                <input class="form-control" type="text" value="محمد">
+                            </div>
+                        </div>
+                        <div class="form-group my-3">
+                            <label class="col-lg-3 control-label">أسم العائلة :</label>
+                            <div class="col-lg-8">
+                                <input class="form-control" type="text" value="يوسف">
+                            </div>
+                        </div>
+                        <div class="form-group my-3">
+                            <label class="col-lg-3 control-label">رقم الهاتف :</label>
+                            <div class="col-lg-8">
+                                <input class="form-control" type="text" value="">
+                            </div>
+                        </div>
+                        <div class="form-group my-3">
+                            <label class="col-lg-3 control-label">البريد الإلكتروني:</label>
+                            <div class="col-lg-8">
+                                <input class="form-control" type="text" value="muhammadmedhat12@gmail.com">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/owl.min.js"></script>
+    <script>
+        $('#Header').load("Header.html");
+        // $('#Footer').load("Footer.html");
+    </script>
+    <script>
+        document.querySelector('.panel-close.close').addEventListener('click', () => {
+            document.querySelector('.alert.alert-info.alert-dismissable').classList.add('d-none');
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

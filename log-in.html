@@ -61,6 +61,7 @@
         let sendCode = document.querySelector('.send-code');
         let codeInput = document.querySelector('.code')
         sendCode.addEventListener('click', (e) => {
+            e.preventDefault();
             codeInput.style = "display: block; height: 100%;";
             sendCode.textContent = 'تحقق';
         });

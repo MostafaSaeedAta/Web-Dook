@@ -217,4 +217,16 @@ a {
     .login-text span {
         font-size: 28px;
     }
+
+    .login::before,
+    .signup::before {
+        left: 50%;
+        bottom: -70%;
+    }
+
+    .login::after,
+    .signup::after {
+        left: 45%;
+        bottom: -75%;
+    }
 }

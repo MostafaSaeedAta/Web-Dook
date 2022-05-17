@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> All Categories </title>
+    <title> تسجيل الدخول </title>
     <!-- icon -->
     <link rel="icon" type="image/x-icon" href="img/fav.png">
     <!-- Bootstrap -->
@@ -27,13 +27,26 @@
 </head>
 
 <body>
-
-    <form class="login">
+    <div class="overlay"></div>
+    <!-- login form  -->
+    <form class="login ">
         <div class="logo mb-4"><img src="imgs/logo.png" alt=""></div>
         <h5 class="title mb-4">برجاء تسجيل الدخول للمتابعه</h5>
-        <input type="text" placeholder="رقم الهاتف" class="phone">
+        <input type="text" placeholder="رقم الهاتف" class="phone" required>
         <input type="text" placeholder="رمز التأكيد" class="code" style="display: none;">
         <button class="send-code">إرسال الرمز</button>
+        <h6 class="signup-text mt-3 text-center">أو <span class="mt-2">سجل الأن</span></h6>
+    </form>
+
+    <!-- signup form  -->
+    <form class="signup" style="left: calc(50% + 520px); opacity:0;">
+        <div class="logo mb-4"><img src="imgs/logo.png" alt=""></div>
+        <h5 class="title mb-4">انضم الأن لعائلتنا</h5>
+        <input type="text" placeholder="الأسم" class="name" required>
+        <input type="text" placeholder="رقم الهاتف" class="phone" required>
+        <input type="text" placeholder="البريد الإلكتروني" class="email">
+        <button class="send-code">إنشاء حساب</button>
+        <h6 class="login-text mt-3 text-center">أو <span class="mt-2">تسجيل الدخول</span></h6>
     </form>
 
 
@@ -44,12 +57,28 @@
     <script src="js/wow.min.js"></script>
     <script src="js/owl.min.js"></script>
     <script>
+        // to show the code box and hide 
         let sendCode = document.querySelector('.send-code');
         let codeInput = document.querySelector('.code')
         sendCode.addEventListener('click', (e) => {
             e.preventDefault();
             codeInput.style = "display: block; height: 100%;";
-            sendCode.textContent = 'تحقق'
+            sendCode.textContent = 'تحقق';
+        });
+        // to toggle the login and sign up page 
+        let sigUpToggler = document.querySelector('.signup-text span');
+        let loginform = document.querySelector('.login');
+        let logInToggler = document.querySelector('.login-text span');
+        let signUpform = document.querySelector('.signup');
+        sigUpToggler.addEventListener('click', (e) => {
+            e.preventDefault();
+            loginform.style = 'left: calc(50% + 520px); opacity:0;';
+            signUpform.style = 'left: 50%; opacity:1;';
+        });
+        logInToggler.addEventListener('click', (e) => {
+            e.preventDefault();
+            signUpform.style = 'left: calc(50% + 520px); opacity:0;';
+            loginform.style = 'left: 50%; opacity:1;';
         })
     </script>
     <script src="js/main.js"></script>

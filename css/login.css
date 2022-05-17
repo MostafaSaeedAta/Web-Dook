@@ -1,9 +1,18 @@
 body {
-    background-color: #fafafa;
+    background-image: url(../imgs/login_background.png);
     font-family: "Asap", sans-serif;
+    background-size: cover;
 }
 
-.login {
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f0f036;
+
+}
+
+.login,
+.signup {
     overflow: hidden;
     background-color: white;
     padding: 40px 30px 30px 30px;
@@ -25,6 +34,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 1s;
 }
 
 .code {
@@ -34,7 +44,9 @@ body {
 }
 
 .login::before,
-.login::after {
+.login::after,
+.signup::before,
+.signup::after {
     content: "";
     position: absolute;
     width: 600px;
@@ -46,25 +58,28 @@ body {
     z-index: -1;
 }
 
-.login::before {
+.login::before,
+.signup::before {
     left: 40%;
-    bottom: -130%;
+    bottom: -100%;
     background-color: rgba(69, 105, 144, 0.15);
     -webkit-animation: wawes 6s infinite linear;
     -moz-animation: wawes 6s infinite linear;
     animation: wawes 6s infinite linear;
 }
 
-.login::after {
+.login::after,
+.signup::after {
     left: 35%;
-    bottom: -125%;
+    bottom: -97%;
     background-color: rgba(2, 128, 144, 0.2);
     -webkit-animation: wawes 7s infinite;
     -moz-animation: wawes 7s infinite;
     animation: wawes 7s infinite;
 }
 
-.login>input {
+.login>input,
+.signup>input {
     font-family: "Asap", sans-serif;
     display: block;
     border-radius: 5px;
@@ -73,12 +88,13 @@ body {
     width: 100%;
     border: 0;
     padding: 10px 10px;
-    margin: 15px -10px;
+    margin: 10px -10px;
     outline: none;
     border: 1px solid #f0f0f0;
 }
 
-.login>button {
+.login>button,
+.signup>button {
     font-family: "Asap", sans-serif;
     cursor: pointer;
     color: #fff;
@@ -97,7 +113,8 @@ body {
     outline: none;
 }
 
-.login>button:hover {
+.login>button:hover,
+.signup>button:hover {
     background-color: #038d33;
 }
 
@@ -146,4 +163,58 @@ a {
     right: 10px;
     bottom: 10px;
     font-size: 12px;
+}
+
+.signup-text span,
+.login-text span {
+    padding: 15px;
+    display: block;
+    color: rgba(2, 128, 144, 1);
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 10px;
+    border: 1PX solid transparent;
+}
+
+.signup-text span:hover,
+.login-text span:hover {
+    border: .5px solid #e9e6e6;
+}
+
+
+@media (max-width:425px) {
+
+    .login,
+    .signup {
+        width: 350px;
+    }
+}
+
+@media (min-width:1440px) {
+
+    .login,
+    .signup {
+        font-size: 4rem;
+        min-width: 900px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .login>input,
+    .signup>input {
+        font-size: 28px;
+    }
+
+    .login>button,
+    .signup>button {
+        width: 200px;
+        font-size: 28px;
+    }
+
+    .signup-text span,
+    .login-text span {
+        font-size: 28px;
+    }
 }

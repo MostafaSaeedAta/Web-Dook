@@ -415,7 +415,7 @@
 .most-visted-owl .img-content .fav {
     position: absolute;
     left: 13px;
-    top: 17px;
+    top: 15px;
     width: 45px;
     background-color: #090909b7;
     opacity: .9;
@@ -1011,14 +1011,15 @@
 .rusturant-card .fav {
     position: absolute;
     left: 13px;
-    top: 17px;
+    top: 15px;
     width: 45px;
     background-color: #000000b0;
     opacity: .9;
     border-radius: 10px;
-    height: 30px;
+    height: 35px;
     text-align: center;
-    line-height: 30px;
+    line-height: 35px;
+    font-size: 20px;
     color: #fff;
     cursor: pointer;
 }

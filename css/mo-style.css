@@ -44,7 +44,7 @@ button {
 
 .x-flip {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .my-active-time {
@@ -69,7 +69,7 @@ button {
   border-radius: 20px;
   margin-top: -120px;
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .restaurant-details .rest-infos .res-name {
@@ -133,15 +133,15 @@ button {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
 .restaurant-details .resturants .item .text-content {
   position: relative;
   border-radius: 0px 0px 43px 43px;
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   padding: 15px 20px 14px 10px;
 }
 
@@ -152,7 +152,7 @@ button {
   left: -26px;
   border-radius: 18px 50px 22px 22px;
   -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  transform: rotate(0deg);
   background-color: #fff;
   width: 78px;
   height: 66px;
@@ -210,7 +210,7 @@ button {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: #F29F05;
   color: #fff;
   border-radius: 20px;
@@ -219,11 +219,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -246,11 +246,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   color: #091B3D;
   font-weight: bold;
   margin-bottom: 10px;
@@ -280,11 +280,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-image: url(../imgs/map.png);
   background-size: cover;
   border-radius: 12px;
@@ -302,11 +302,11 @@ button {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .rest-about .gps .rest-address .location-div .location-details p {
@@ -340,11 +340,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .rating-section .rating-div .right-div .rate-star {
@@ -424,11 +424,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background: white;
   padding: 10px 18px;
   border-radius: 20px;
@@ -467,7 +467,7 @@ button {
 
 .rating-section .add-comment-rate .add-comment:hover {
   -webkit-box-shadow: 0px 3px 6px #ddd;
-          box-shadow: 0px 3px 6px #ddd;
+  box-shadow: 0px 3px 6px #ddd;
 }
 
 .rating-section .add-comment-rate .add-comment button {
@@ -490,7 +490,7 @@ button {
   width: 360px;
   text-align: center;
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .table-serve-page .serve-form .month-day-slider {
@@ -501,7 +501,7 @@ button {
   margin-top: 30px;
   text-align: center;
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .table-serve-page .serve-form .month-day-slider button {
@@ -513,8 +513,8 @@ button {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .table-serve-page .serve-form .month-day-slider .owl-dots {
@@ -575,7 +575,7 @@ button {
 
 .table-serve-page .serve-form .person-slider {
   -webkit-box-shadow: 0px 0px 30px #ddd;
-          box-shadow: 0px 0px 30px #ddd;
+  box-shadow: 0px 0px 30px #ddd;
   padding: 30px;
   border-radius: 20px;
 }
@@ -666,11 +666,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: #03A63D;
   border-radius: 20px;
   color: #fff;
@@ -713,13 +713,14 @@ button {
   left: -1px;
   border-bottom-left-radius: 30px;
   -webkit-box-shadow: -12px 0px 0 0 #fff;
-          box-shadow: -12px 0px 0 0 #fff;
+  box-shadow: -12px 0px 0 0 #fff;
 }
 
 @media (min-width: 469px) and (max-width: 991px) {
   .table-serve-page .serve-form .month-day-slider .owl-prev {
     right: 20%;
   }
+
   .table-serve-page .serve-form .month-day-slider .owl-next {
     left: 19%;
   }
@@ -729,55 +730,70 @@ button {
   .table-serve-page .serve-form .final-serve {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
+
   .table-serve-page .serve-form .final-serve .final-date {
     padding: 15px 0;
   }
+
   .table-serve-page .serve-form .time-div p {
     font-size: 12px;
   }
+
   .table-serve-page .serve-form .month-day-slider .owl-prev {
     right: 18%;
     top: -6px;
   }
+
   .table-serve-page .serve-form .month-day-slider .owl-next {
     left: 15%;
     top: -6px;
   }
+
   .table-serve-page .breadcrumb h3 {
     width: 320px;
   }
+
   .cust-rate {
     left: 0px;
     top: 10px;
   }
+
   .cust-rate span,
   .cust-rate i {
     font-size: 12px;
   }
+
   .cust-name {
     font-size: 15px;
   }
+
   .cust-text {
     font-size: 12px;
   }
+
   .add-comment-rate {
     margin-top: 15px;
   }
+
   .restaurant-details .rest-infos {
     padding: 25px;
   }
+
   .restaurant-details .rest-infos .rest-btns .btn {
     font-size: 13px;
   }
+
   .rest-about .content {
     padding: 35px !important;
   }
+
   .rest-about .gps {
     padding: 35px;
   }
+
   .rest-about .gps .rest-address .location-div {
     padding: 10px;
     background-color: #fff;
@@ -787,34 +803,39 @@ button {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     text-align: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
+
   .rest-about .gps .rest-address .location-div .img-div {
     margin-bottom: 10px;
   }
+
   .rest-about .gps .rest-address .location-div .location-details a {
     margin-top: 8px;
     text-align: center;
   }
+
   .rating-section .rating-div {
     padding: 15px 20px;
   }
+
   .rating-section .rating-div .middle {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
+
   .rating-section .rating-div .bar-5,
   .rating-section .rating-div .bar-4,
   .rating-section .rating-div .bar-3,
@@ -822,5 +843,19 @@ button {
   .rating-section .rating-div .bar-1 {
     height: 15px;
   }
+
+
 }
+
+@media (max-width:992px) {
+  .restaurant-details .rest-infos {
+    padding: 25px;
+  }
+
+  .restaurant-details .rest-infos .rest-btns .btn {
+    font-size: 10px;
+  }
+
+}
+
 /*# sourceMappingURL=mo-style.css.map */

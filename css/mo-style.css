@@ -856,6 +856,14 @@ button {
     font-size: 10px;
   }
 
+  .table-serve-page .serve-form .time-div {
+    padding: 10px 5px;
+  }
+
+  .table-serve-page .serve-form .time-div p {
+    font-size: 12px;
+  }
+
 }
 
 /*# sourceMappingURL=mo-style.css.map */

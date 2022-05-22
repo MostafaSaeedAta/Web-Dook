@@ -183,19 +183,19 @@
     transition: 1s;
 }
 
-.navbar-toggler.collapsed .navbar-toggler-icon .fa-bars:before {
+.navbar-toggler .navbar-toggler-icon .fa-bars:before {
     content: '\f0c9';
     color: #000000b0;
     font-size: 28px;
     transition: 1s;
 }
 
-.navbar-toggler .navbar-toggler-icon .fa-bars:before {
+/* .navbar-toggler .navbar-toggler-icon .fa-bars:before {
     content: '\f00d';
     color: #000000b0;
     font-size: 28px;
     transition: 1s;
-}
+} */
 
 @media (max-width:992px) {
     .navbar-nav {

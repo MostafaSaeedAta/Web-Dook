@@ -150,7 +150,7 @@
 
 .dropdown-menu-dark li {
     min-height: 45px;
-    margin: 0 15px;
+    margin: 0 15px !important;
 }
 
 .dropdown-menu-dark .dropdown-item {
